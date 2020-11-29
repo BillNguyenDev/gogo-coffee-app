@@ -129,27 +129,15 @@
   }
 }
 
-@media only screen and (max-width: 1199px) {
-  .container-flex {
-    .title-container {
-      h2 {
-        font-size: 60px;
-      }
-      h4 {
-        font-size: 24px;
-      }
-      .btn {
-        justify-content: space-around;
-        display: flex;
-        flex-wrap: wrap;
-        button {
-          width: 256px;
-        }
+@media only screen and (max-width: 1278px) {
+  .background {
+    .container-flex {
+      .LoginForm {
+        width: 400px;
       }
     }
   }
 }
-
 @media only screen and (max-width: 800px) {
   .background {
     .container-flex {

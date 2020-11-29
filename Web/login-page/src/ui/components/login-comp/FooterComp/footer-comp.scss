@@ -36,23 +36,29 @@
   .google-play img {
     width: 9rem;
   }
-  .footer-bottom {
-    display: -ms-flexbox;
+  .copy-right {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     min-height: 90px;
     margin-top: 10px;
-    .copy-right {
+    flex-direction: column;
+    label {
       color: #dc7718;
-      margin-left: 32rem;
+      // margin-left: 32rem;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
     }
     .line {
       border-top: 2px solid #dc7718;
-      display: block;
-      width: 63%;
-      text-align: center;
-      margin: 10px 0 10px 19rem;
+      // display: block;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0 10px 0;
     }
   }
 }

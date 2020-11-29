@@ -54,24 +54,26 @@ const FooterLoginComp = () => {
                     </div>
                 </div>
 
-                <div className="footer-bottom text-center">
-                    <div className="container">
-                        <div className="row">
-                            <FooterBottom />
-                        </div>
-                    </div>
-                </div>
+
+                <CopyRight />
+
+
+
             </div>
         </>
     )
 }
 
-const FooterBottom = () => {
+const CopyRight = () => {
     return (
         <>
-            <div className="line"></div>
             <div className="copy-right">
-                &copy; Copy right by Gogo coffee app in 2020
+                <div className="container">
+                    <div className="line"></div>
+                    <label>
+                        &copy; Copy right by Gogo coffee app in 2020
+                </label>
+                </div>
             </div>
         </>
     )
