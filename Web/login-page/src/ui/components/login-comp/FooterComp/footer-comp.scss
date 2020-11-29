@@ -39,9 +39,7 @@
   .footer-bottom {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
+    justify-content: center;
     align-items: center;
     min-height: 90px;
     margin-top: 10px;
@@ -58,3 +56,15 @@
     }
   }
 }
+// @media only screen and (max-width: 791px) {
+//   .navbar-menu {
+//     .menu-list {
+//       .search {
+//         margin-left: 5rem;
+//         input {
+//           width: 20rem;
+//         }
+//       }
+//     }
+//   }
+// }

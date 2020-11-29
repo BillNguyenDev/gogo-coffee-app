@@ -54,7 +54,7 @@ const FooterLoginComp = () => {
                     </div>
                 </div>
 
-                <div className="footer-bottom">
+                <div className="footer-bottom text-center">
                     <div className="container">
                         <div className="row">
                             <FooterBottom />
@@ -70,7 +70,7 @@ const FooterBottom = () => {
     return (
         <>
             <div className="line"></div>
-            <div className="copy-right text-center">
+            <div className="copy-right">
                 &copy; Copy right by Gogo coffee app in 2020
             </div>
         </>
