@@ -3,10 +3,20 @@
   padding-left: 9rem;
   .description {
     svg {
-      width: 40px;
-      height: 15px;
+      width: 12px;
+      height: 12px;
       color: #b88a5f;
       margin-right: 10px;
+
+      // transition: margin-bottom 2s ease-in-out;
+    }
+    .social-media {
+      svg:hover {
+        color: red;
+        margin-bottom: 2px;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+      }
     }
     span {
       color: #e2d6cb;
@@ -18,9 +28,6 @@
   }
   li {
     color: #e2d6cb;
-    margin-top: 10px;
-  }
-  .social-media {
     margin-top: 10px;
   }
   .app-store img {

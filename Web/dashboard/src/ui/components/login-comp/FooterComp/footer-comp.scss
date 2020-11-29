@@ -1,0 +1,53 @@
+.footer-content {
+  margin-top: 10rem;
+  padding-left: 9rem;
+  .description {
+    svg {
+      width: 40px;
+      height: 15px;
+      color: #b88a5f;
+      margin-right: 10px;
+    }
+    span {
+      color: #e2d6cb;
+      font-size: 1rem;
+    }
+  }
+  h3 {
+    color: #dc7718;
+  }
+  li {
+    color: #e2d6cb;
+    margin-top: 10px;
+  }
+  .social-media {
+    margin-top: 10px;
+  }
+  .app-store img {
+    width: 9rem;
+  }
+  .google-play img {
+    width: 9rem;
+  }
+  .footer-bottom {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 90px;
+    margin-top: 10px;
+    .copy-right {
+      color: #dc7718;
+      margin-left: 32rem;
+    }
+    .line {
+      border-top: 2px solid #dc7718;
+      display: block;
+      width: 63%;
+      text-align: center;
+      margin: 10px 0 10px 19rem;
+    }
+  }
+}

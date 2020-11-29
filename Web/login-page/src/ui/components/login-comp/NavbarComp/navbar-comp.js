@@ -1,67 +1,64 @@
 import React, { useState } from 'react'
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText,
-    Button
-} from 'reactstrap';
 import './navbar-comp.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/fontawesome-free-solid';
-const NavBarComp = (props) => {
-    const [isOpen, setIsOpen] = useState(false);
-    const logo = <img alt="logo" src="https://e7.pngegg.com/pngimages/161/115/png-clipart-brown-coffee-mug-logo-coffee-cup-cappuccino-cafe-hot-coffee-diagram-glass-hand.png" onError={(e) => e.target.src = 'https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} height="40" className="p-mr-2"></img>;
-    const toggle = () => setIsOpen(!isOpen);
+
+const NavBarComp = () => {
     return (
         <>
-            <div>
-                <Navbar className="updated-navbar" color="light" light expand="md">
-                    <div className="logo">
-                        <img src="https://e7.pngegg.com/pngimages/161/115/png-clipart-brown-coffee-mug-logo-coffee-cup-cappuccino-cafe-hot-coffee-diagram-glass-hand.png" alt="" />
-                    </div>
-                    <NavbarBrand href="/">Gogo Coffee</NavbarBrand>
-                    <NavbarToggler onClick={toggle} />
-                    <Collapse isOpen={isOpen} navbar>
-                        <Nav className="mr-auto" navbar>
-                            <NavItem>
-                                <NavLink>Components</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                            </NavItem>
-                            <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
-                                    Options
-                                </DropdownToggle>
-                                <DropdownMenu right>
-                                    <DropdownItem>
-                                        Option 1
-                                </DropdownItem>
-                                    <DropdownItem>
-                                        Option 2
-                                    </DropdownItem>
-                                    <DropdownItem divider />
-                                    <DropdownItem>
-                                        Reset
-                                    </DropdownItem>
-                                </DropdownMenu>
-                            </UncontrolledDropdown>
-                            <input id="search-input" type="text" placeholder="Search..." name="search" />
-                            <span className="text-center">
-                                <Button color="primary" type="submit"><FontAwesomeIcon icon={faSearch} /></Button>{' '}
-                            </span>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
+            <div className="navbar-menu">
+                <span className="icon">
+                    <FontAwesomeIcon icon="bars" className="bars" />
+                </span>
+                <ul className="menu-list">
+                    <li className="item logo">
+                        <img src="https://e7.pngegg.com/pngimages/161/115/png-clipart-brown-coffee-mug-logo-coffee-cup-cappuccino-cafe-hot-coffee-diagram-glass-hand.png"
+                            alt="" />
+                        <span>Gogo Coffee</span>
+                    </li>
+                    <li className="item">Home</li>
+                    <li className="item features">Features
+                        <FontAwesomeIcon icon="chevron-down" className="chevron-down-icon" />
+                        <div className="dropdownlist1">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-md-4">
+                                        <ul>
+                                            <li className="child-item">Item 1</li>
+                                            <li className="child-item">Item 2</li>
+                                            <li className="child-item">Item 3</li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <ul>
+                                            <li className="child-item">Item 4</li>
+                                            <li className="child-item">Itm 5</li>
+                                            <li className="child-item">Item 6</li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <ul>
+                                            <li className="child-item">Item 7</li>
+                                            <li className="child-item">Item 8</li>
+                                            <li className="child-item">Item 9</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li className="item more">More
+                        <FontAwesomeIcon icon="chevron-down" className="chevron-down-icon" />
+                        <ul className="dropdownlist2">
+                            <li className="child-item">Option1</li>
+                            <li className="child-item">Option2</li>
+                        </ul>
+                    </li>
+                    <li className="item search">
+                        <FontAwesomeIcon icon={faSearch} className="search-icon" />
+                        <input placeholder="Search term" />
+                    </li>
+                </ul>
             </div>
         </>
     )

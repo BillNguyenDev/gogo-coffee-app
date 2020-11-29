@@ -1,0 +1,26 @@
+.updated-navbar {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #88871e !important;
+  a {
+    color: #fb230e;
+  }
+  padding-left: 5rem;
+  #search-input {
+    padding: 12px 22px;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 19rem;
+    margin-left: 2rem;
+  }
+  Button {
+    margin: 0 0 0 10px;
+  }
+  .logo img {
+    width: 4rem;
+    height: 3rem;
+    margin-right: 4px;
+  }
+}

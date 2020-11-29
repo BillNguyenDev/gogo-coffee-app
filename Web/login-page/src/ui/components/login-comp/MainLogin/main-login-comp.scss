@@ -2,42 +2,174 @@
   background-image: url("https://images.designtrends.com/wp-content/uploads/2016/02/24133854/Feel-Good-Coffee-in-the-Morning.jpg");
   width: 100%;
   height: 100%;
-  .LoginForm {
-    width: 484px;
-    border: 1px solid #fff;
-    padding: 64px;
-    border-radius: 12px;
-    background-color: #fff;
-  }
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  .check-remember {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-
-    label {
-      margin: 0;
-      margin-left: 1rem;
+  .container-flex {
+    .LoginForm {
+      width: 484px;
+      border: 1px solid #fff;
+      padding: 64px;
+      border-radius: 12px;
+      background-color: #fff;
+      margin: 0 auto;
     }
-  }
-
-  .content {
     margin-top: 4rem;
     padding: 11rem 0 0 15rem;
-  }
-  Button {
-    width: 100%;
-    height: 3rem;
-    margin-top: 2rem;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .login {
+      text-align: center;
+    }
+    .form-input {
+      transition: all 0.3s;
+      label {
+        display: block;
+        transform: translateY(-40px) translateX(10px);
+        transform-origin: 0 0;
+        text-align: left;
+        transition: all 0.3s;
+        width: 80px;
+        background-color: #fff;
+        z-index: 1;
+        color: #dad3c7;
+        font-size: 1rem;
+        cursor: text;
+      }
+      .input {
+        width: 100%;
+        height: 54px;
+        border-radius: 5px;
+        border: 1px solid rgb(240, 240, 240);
+        padding: 15px;
+        &:focus {
+          // background-color: yellow;
+          border: 1px solid #eaa82b;
+          outline: none;
+        }
+        &:focus + label,
+        &:not(:placeholder-shown) + label {
+          transform: translateY(-68px) translateX(10px) scale(0.8);
+        }
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+    .check-remember {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      label {
+        margin: 0;
+        margin-left: 1rem;
+      }
+    }
 
-  .title {
-    padding: 13rem 0;
-    h2 {
-      color: #dc7718;
-      font-family: Helvetica;
-      font-weight: bold;
-      font-size: 3rem;
+    .title-container {
+      .btn {
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        button {
+          font-family: "Rajdhani", Sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 16px;
+          border-style: solid;
+          border-width: 1px 1px 1px 1px;
+          border-radius: 12px 12px 12px 12px;
+          width: auto;
+          align-items: center;
+          padding: 18px 26px;
+        }
+        .download {
+          background-color: #3e3f5e;
+          color: #fff;
+        }
+        .download:hover {
+          background-color: #de910d;
+          transition: all 0.2s;
+        }
+        .about-features {
+          background-color: #00000000;
+          color: #fff;
+          border: 1px solid #fff;
+        }
+        .about-features:hover {
+          background-color: #3e3f5e;
+          transition: all 0.4s;
+        }
+      }
+      h2 {
+        color: #dc7718;
+        font-family: "Titillium Web", Sans-serif;
+        font-size: 104px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+      h4 {
+        color: #dc7718;
+        font-family: "Rajdhani", Sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+    Button {
+      width: 100%;
+      height: 3rem;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .container-flex {
+    .title-container {
+      h2 {
+        font-size: 60px;
+      }
+      h4 {
+        font-size: 24px;
+      }
+      .btn {
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        button {
+          width: 256px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .LoginForm {
+    width: 475px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .LoginForm {
+    width: 300px;
+    margin-right: 100px;
+  }
+  .background {
+    .container-flex {
+      padding-right: 4rem;
+      .title-container {
+        h2 {
+          font-size: 60px !important;
+        }
+        h4 {
+          font-size: 24px;
+        }
+      }
     }
   }
 }

@@ -15,8 +15,10 @@ const FooterLoginComp = () => {
                     <div className="row">
                         <div className="col-md-3">
                             <div className="description">
+                                <span style={{ 'marginRight': '10px' }}>One cup of coffee in Gogo Coffee will boost your energy every morning.Come and order.
+                                </span>
                                 <FontAwesomeIcon icon={faCoffee} />
-                                <span>Vikinger Social Community was created in 2020, designed to be a new and exciting way to bring people together!</span>
+                                <FontAwesomeIcon icon={faCoffee} />
                                 <div className="social-media">
                                     <FontAwesomeIcon icon={faFacebookF} />
                                     <FontAwesomeIcon icon={faInstagram} />
@@ -34,17 +36,17 @@ const FooterLoginComp = () => {
                                         <li className="google-play"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQihbMObs2stYan2aQKMttr81DBv6GVs6elSA&usqp=CAU" alt="" /></li>
                                     </div>
                                     <div className="col-sm-4">
+                                        <h3>Branches</h3>
+                                        <li>Sai Gon</li>
+                                        <li>Ha Noi</li>
+                                        <li>Hue</li>
+                                        <li>Da Nang</li>
+                                    </div>
+                                    <div className="col-sm-4">
                                         <h3>Information:</h3>
                                         <li>Page:<a href="https://www.facebook.com/"></a> </li>
                                         <li>Email:thecoffeeshop@gmail.com</li>
                                         <li>Contact:09778352582</li>
-                                    </div>
-                                    <div className="col-sm-4">
-                                        <h3>Branches</h3>
-                                        <li>Saigon</li>
-                                        <li>Hanoi</li>
-                                        <li>Hue</li>
-                                        <li>Danang</li>
                                     </div>
                                 </div>
                             </div>

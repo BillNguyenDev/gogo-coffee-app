@@ -31,24 +31,18 @@ const FormLogin = () => {
                 </div>
                 <FormGroup row>
                     <Col sm={12}>
-                        <Input
-                            type="username"
-                            name="username"
-                            id="exampleEmail"
-                            value={account.username}
-                            onChange={handleChange}
-                            placeholder="User name" />
+                        <div className="form-input">
+                            <input type="text" className="input" placeholder="username" />
+                            <label htmlFor="">User name</label>
+                        </div>
                     </Col>
                 </FormGroup>
                 <FormGroup row>
                     <Col sm={12}>
-                        <Input
-                            type="password"
-                            name="password"
-                            id="examplePassword"
-                            value={account.password}
-                            onChange={handleChange}
-                            placeholder="Password" />
+                        <div className="form-input">
+                            <input type="password" className="input" placeholder="password" />
+                            <label htmlFor="">Password</label>
+                        </div>
                     </Col>
                 </FormGroup>
                 <div className="check-remember">
@@ -65,15 +59,26 @@ const FormLogin = () => {
 const MainLoginComp = () => {
     return (
         <div className="background">
-            <div className="content">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 col-xl-6 title">
-                            <div className="text-center">
-                                <h2 style={{ "opacity": "0.5" }}>Gogo coffee app</h2>
-                            </div>
+            <div className="container container-flex">
+                <div className="row">
+                    <div className="col-xl-6 col-md-12 title-container text-center">
+                        <div className="welcome">
+                            <h4>Welcome to</h4>
                         </div>
-                        <div className="col-lg-6 col-xl-6">
+                        <div className="brand-name">
+                            <h2>Gogo coffee</h2>
+                        </div>
+                        <div className="btn">
+                            <button className="download">
+                                Download Now !
+                                </button>
+                            <button className="about-features">
+                                About Features
+                                </button>
+                        </div>
+                    </div>
+                    <div className="col-xl-6 col-md-12 login">
+                        <div className="text-center">
                             <FormLogin />
                         </div>
                     </div>
