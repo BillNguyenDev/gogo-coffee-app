@@ -20,6 +20,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     .login {
       text-align: center;
     }
@@ -149,26 +151,22 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .LoginForm {
-    width: 475px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .LoginForm {
-    width: 300px;
-    margin-right: 100px;
-  }
   .background {
     .container-flex {
       padding-right: 4rem;
-      .title-container {
-        h2 {
-          font-size: 60px !important;
-        }
-        h4 {
-          font-size: 24px;
-        }
+      .LoginForm {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .background {
+    .container-flex {
+      padding-right: 4rem;
+      .LoginForm {
+        width: 300px;
       }
     }
   }
