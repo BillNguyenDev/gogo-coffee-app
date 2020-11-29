@@ -1,6 +1,6 @@
 .footer-content {
   margin-top: 10rem;
-  padding-left: 9rem;
+  // padding-left: 9rem;
   .description {
     svg {
       width: 12px;
@@ -62,15 +62,8 @@
     }
   }
 }
-// @media only screen and (max-width: 791px) {
-//   .navbar-menu {
-//     .menu-list {
-//       .search {
-//         margin-left: 5rem;
-//         input {
-//           width: 20rem;
-//         }
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width: 900px) {
+  .footer-content {
+    padding-right: 4rem;
+  }
+}
