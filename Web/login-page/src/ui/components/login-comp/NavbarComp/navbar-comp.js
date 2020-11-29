@@ -56,7 +56,7 @@ const NavBarComp = () => {
                     </li>
                     <li className="item search">
                         <FontAwesomeIcon icon={faSearch} className="search-icon" />
-                        <input placeholder="Search term" />
+                        <input type="text" name="s" placeholder="Search term" />
                     </li>
                 </ul>
             </div>

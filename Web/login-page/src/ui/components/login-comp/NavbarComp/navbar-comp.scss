@@ -43,6 +43,9 @@
         font-size: 15px;
         font-weight: lighter;
         padding-right: 60px;
+        &:focus {
+          outline: none;
+        }
       }
       .search-icon {
         position: absolute;
