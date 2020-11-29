@@ -1,26 +1,177 @@
-.updated-navbar {
+.navbar-menu {
   z-index: 2;
   position: fixed;
   top: 0;
   width: 100%;
-  background: #88871e !important;
-  a {
-    color: #fb230e;
+  background: #fff;
+  height: 100px;
+  padding: 0.5rem 0;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+  .menu-list {
+    .logo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 4rem;
+        height: 3rem;
+      }
+      span {
+        margin-left: 2px;
+      }
+    }
+    .search {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20rem;
+      input {
+        border: initial;
+        background: #f1efeb;
+        outline: medium none invert !important;
+        outline: initial !important;
+        padding: 0.5rem 1rem;
+        border-radius: 1.1rem;
+        line-height: 1.75;
+        font-size: 0.8rem;
+        width: 93%;
+        color: #3a3a3a;
+      }
+      .search-icon {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        font-size: 18px;
+        color: rgba(192, 192, 192, 0.3);
+      }
+    }
+    .item {
+      display: inline-block;
+      margin-right: 2rem;
+      padding-top: 0rem;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 80px;
+      color: rgba(192, 192, 192, 0.3);
+    }
+    .chevron-down-icon {
+      margin-left: 12px;
+      font-size: 8px;
+    }
+    .features {
+      position: relative;
+      cursor: pointer;
+      .dropdownlist1 {
+        position: absolute;
+        padding: 50px 16px 50px 60px;
+        border-radius: 12px;
+        background-color: #ffff;
+        box-shadow: var(--color-box-shadow);
+        top: 64px;
+        left: 0;
+        width: 25rem;
+        height: 13rem;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(0, -40px);
+        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+          z-index 0s linear 0.01s;
+      }
+      &:hover .dropdownlist1 {
+        visibility: visible; /* shows sub-menu */
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(0%);
+        transition-delay: 0s, 0s, 0.3s;
+        .child-item {
+          color: #000;
+        }
+      }
+    }
+    .more {
+      position: relative;
+      cursor: pointer;
+      .dropdownlist2 {
+        width: 120px;
+        padding: 8px 0;
+        border-radius: 10px;
+        background-color: #bd8d3d;
+        top: 64px;
+        left: 0;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transform: translate(0, -40px);
+        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+          z-index 0s linear 0.01s;
+        z-index: 200;
+      }
+      &:hover .dropdownlist2 {
+        visibility: visible; /* shows sub-menu */
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(0%);
+        transition-delay: 0s, 0s, 0.3s;
+      }
+    }
   }
-  padding-left: 5rem;
-  #search-input {
-    padding: 12px 22px;
-    border-radius: 5px;
-    border: 1px solid;
-    width: 19rem;
-    margin-left: 2rem;
-  }
-  Button {
-    margin: 0 0 0 10px;
-  }
-  .logo img {
-    width: 4rem;
-    height: 3rem;
-    margin-right: 4px;
+  .icon {
+    display: none;
   }
 }
+.child-item {
+  height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+// @media only screen and (max-width: 1418px) {
+//   .navbar-menu {
+//     .menu-list {
+//       .search {
+//         margin-left: 5rem;
+//         input {
+//           width: 20rem;
+//         }
+//       }
+//     }
+//   }
+// }
+// @media only screen and (max-width: 1407px) {
+//   .navbar-menu {
+//     .menu-list {
+//       .search {
+//         margin-left: 5rem;
+//         input {
+//           width: 20rem;
+//         }
+//       }
+//     }
+//   }
+// }
+@media only screen and (max-width: 1397px) {
+  .navbar-menu {
+    .menu-list {
+      .search {
+        margin-left: 5rem;
+        input {
+          width: 15rem;
+        }
+      }
+    }
+  }
+}
+// @media only screen and (max-width: 1092px) {
+//   .navbar-menu {
+//     .icon {
+//       display: block;
+//     }
+//   }
+
+//   .menu-list {
+//     display: none;
+//   }
+// }

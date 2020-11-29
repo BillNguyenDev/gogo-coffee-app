@@ -7,14 +7,13 @@
     footer
 */
 import React, { useState } from 'react';
-import MainLoginComp from '../components/login-comp/MainLogin/main-login-comp';
 import './login-page.scss';
-import { DashBoardComp } from '../components/login-comp/DashBoard/dashboard';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavBarComp from '../components/login-comp/NavbarComp/navbar-comp';
 import SideBarComp from '../components/login-comp/SideBarComp/sidebar-comp';
 import './login-page.scss';
-import FooterLoginComp from '../components/login-comp/FooterComp/footer-comp';
+import FooterComp from '../components/login-comp/FooterComp/footer-comp';
+import MainDashBoardComp from '../components/login-comp/MainDashBoardComp/main-dashboard-comp';
 const LoginPage = () => {
     return (
         // <Router>
@@ -30,16 +29,8 @@ const LoginPage = () => {
         <>
             <NavBarComp />
             <SideBarComp />
-            <Router>
-                <Switch>
-                    <Route exact path='/'>
-                        <MainLoginComp />
-                    </Route>
-                    <Route exact path='/dashboard'>
-                        <DashBoardComp />
-                    </Route>
-                </Switch>
-            </Router>
+            <MainDashBoardComp />
+            <FooterComp />
         </>
     );
 }
