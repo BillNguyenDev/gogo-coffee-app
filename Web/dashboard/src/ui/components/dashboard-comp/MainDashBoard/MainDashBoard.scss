@@ -1,0 +1,138 @@
+#main-dashboard {
+  margin-top: 100px;
+  margin-left: 30px;
+  .grid-full {
+    width: 100%;
+    float: left;
+  }
+  .container-main-dashboard {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .main-title {
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+    h1,
+    ul,
+    li {
+      display: inline;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      background-color: #e6e0e0e0;
+      float: left;
+      height: 2px;
+      margin-top: 20px;
+    }
+  }
+  .row {
+    margin-top: 30px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 9px 30px 44px rgba(65, 64, 64, 0.04);
+      .card-body {
+        padding: 10px 20px;
+        flex: 1 1 auto;
+        h2 {
+          padding: 15px 0;
+        }
+        .order-list {
+          overflow: auto;
+          height: 500px;
+          .order {
+            img {
+              max-width: 100px;
+              border-radius: 10px;
+            }
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            .order-info {
+              margin-left: 10px;
+              &:hover h3 {
+                color: #6f4e37;
+                transition: all 0.3s ease-in;
+                cursor: pointer;
+              }
+              p {
+                color: #808080;
+              }
+              .order-date {
+                color: #6f4e37;
+              }
+            }
+          }
+        }
+        .dashboard-logs,
+        .tickets-list {
+          height: 270px;
+          width: 300px;
+          overflow: auto;
+          table {
+            width: 100%;
+            height: 100%;
+          }
+          .ticket-creator-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+.tickets-list {
+  overflow: auto;
+  height: 500px;
+  li {
+    display: flex;
+    border-bottom: 1px solid #f1e4e4;
+    padding: 13px 0;
+  }
+}
+.ticket-creator {
+  float: right;
+  flex-direction: column;
+  display: flex;
+  margin-left: 20px;
+}
+li {
+  list-style-type: none;
+}
+.text-right {
+  text-align: right;
+}
+.time-log {
+  color: #9a8a8a !important;
+}
+.card-width {
+  width: 100%;
+}
+.log-id {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #922c88;
+  border-radius: 14px;
+  display: inline-block;
+}
+.border-color {
+  border-color: #922c88 !important;
+}
+.align-middle {
+  vertical-align: middle !important;
+}
+@media screen and (max-width: 1019px) {
+  #main-dashboard {
+    margin-left: 100px;
+  }
+}
