@@ -61,7 +61,7 @@ const rows = [
   createData('Bebinca', 574, 16),
   createData('Cheesecake', 887, 21),
   createData('Chocolate Cake', 1080, 57),
-  createData('Cremeschnitte', 562, 9)
+  createData('Cremeschnitte', 562, 9),
 ];
 
 const useStyles = makeStyles({
@@ -94,7 +94,7 @@ const  StickyHeadTable = () => {
           <TableHead>
             <TableRow>
               {columns.map((column) => (
-                <TableCell
+                <TableCell 
                   key={column.id}
                   align={column.align}
                   style={{ minWidth: column.minWidth }}
@@ -107,7 +107,7 @@ const  StickyHeadTable = () => {
           <TableBody>
             {rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row) => {
               return (
-                <TableRow hover role="checkbox" tabIndex={-1}>
+                <TableRow hover role="checkbox" tabIndex={-1} key={row.name}>
                   {columns.map((column) => {
                     const value = row[column.id];
                     return (
@@ -193,14 +193,14 @@ const Row2 = () => {
                         justify="space-between"
                         alignItems="center" spacing={4}>
                 <Grid item xl={4} lg={4} md={12} sm={12}>
-                    <div className="card card-width">
+                    <div className="card">
                         <div className="card-body">
                             <h2>Product Categories</h2>
                         </div>
                     </div>
                 </Grid>
                 <Grid item xl={4} lg={4} md={12} sm={12}>
-                    <div className="card card-width">
+                    <div className="card">
                         <div className="card-body">
                             <h2>Logs</h2>
                             <div className="dashboard-logs">
@@ -294,7 +294,7 @@ const Row3 = () => {
                     <Grid item xl={6} lg={12}>
                         <div className="card">
                             <div className="card-body">
-                                <h2>Product Categories</h2>
+                                <h2>Calendar</h2>
                             </div>
                         </div>
                     </Grid>
@@ -312,12 +312,111 @@ const Row3 = () => {
         </>
     )   
 }
+const Row4 = () => {
+    return (
+        <>
+        <div className="row">
+          <Grid container
+            direction="row"
+            justify="space-between"
+            alignItems="center" spacing={4}>
+                <Grid item lg={6} sm={12}>
+                    <div className="card">
+                        <div className="card-body">
+                            <h2>Profile Status</h2>
+                            <ul className="status-list">
+                                <li>
+                                    Basic Information
+                                    <div className="dark-grey">
+                                        <div style={{width:'66.6667%'}} className="status-progress">66.6667%</div>
+                                    </div>
+                                </li>
+                                <li>Portfolio
+                                     <div className="dark-grey">
+                                        <div style={{width:'12.5%'}} className="status-progress">12.5%</div>
+                                    </div>
+                                </li>
+                                <li>Billing Details
+                                     <div className="dark-grey">
+                                        <div style={{width:'33.3333%'}} className="status-progress">33.3333%</div>
+                                    </div>
+                                </li>
+                                <li>Interests
+                                     <div className="dark-grey">
+                                        <div style={{width:'0%'}} className="status-progress">0%</div>
+                                    </div>
+                                </li>
+                                <li>Legal Documents
+                                     <div className="dark-grey">
+                                        <div style={{width:'50%'}} className="status-progress">50%</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </Grid>
+                <Grid item lg={6} sm={12}>
+                     <div className="card">
+                        <div className="card-body">
+                            <h2>Cakes</h2>
+                        </div>
+                    </div>
+                </Grid>
+            </Grid>
+        </div>
+        </>
+    )
+  
+}
+const Row5 = () => {
+    return (
+        <>
+            <div className="row">
+                <Grid container
+                        direction="row"
+                        justify="space-between"
+                        alignItems="center" spacing={4}>
+                            <Grid item lg={6} xl={3}>
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h2>Payment Status</h2>
+                                    </div>
+                                </div>
+                            </Grid>
+                             <Grid item lg={6} xl={3}>
+                                 <div className="card">
+                                    <div className="card-body">
+                                        <h2>Payment Done</h2>
+                                    </div>
+                                </div>
+                            </Grid>
+                             <Grid item lg={6} xl={3}>
+                                 <div className="card">
+                                    <div className="card-body">
+                                        <h2>Tasks Done</h2>
+                                    </div>
+                                </div>
+                            </Grid>
+                             <Grid item lg={6} xl={3}>
+                                 <div className="card">
+                                    <div className="card-body">
+                                        <h2>Work Progress</h2>
+                                    </div>
+                                </div>
+                            </Grid>
+                </Grid>
+            </div>
+        </>
+    )
+}
 const MainContent = () => {
     return (
         <>  
             <Row1/>
             <Row2/>
             <Row3/>
+            <Row4/>
+            <Row5/>
         </>
     )
 }
@@ -325,7 +424,7 @@ export const MainDashBoard = () => {
     return (
         <>
         <section id="main-dashboard" className="grid-full">
-            <div className="container-main-dashboard">
+            <div className="container">
            <MainTitle/>
            <MainContent/>
             </div>
