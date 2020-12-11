@@ -24,8 +24,10 @@ const [state, setState] = React.useState({
                     <Grid container
                         direction="row"
                         justify="space-around"
+                        wrap="nowrap"
                         alignItems="center">
-                        <Grid item xl={4} lg={4} md={4}>
+                           
+                        <Grid item xl={4}>
                             <ul className="left-navbar">
                                 <li>
                                     <button><FontAwesomeIcon icon={faBars} /></button>
@@ -41,26 +43,26 @@ const [state, setState] = React.useState({
                                 </li>
                             </ul>
                         </Grid>
-                        <Grid item xl={4} lg={4} md={4} style={{'textAlign':'center'}}>
+                        <Grid item xl={4}>
                                 <span className="app-name">Gogo Coffee</span>
                         </Grid>
-                        <Grid item xl={4} lg={4} md={4}>
+                        <Grid item xl={4} >
                             <ul className="right-navbar">
                                 <li>
                                     <Switch inputProps={{ 'aria-label': 'primary checkbox' }} />
                                 </li>
-                                <li className="notification">
+                                <li className="notification" style={{paddingTop:'8px'}}>
                                     <FontAwesomeIcon icon={faBell} className="noti-icon" />
                                     <div className="noti-quantities">
                                         3
                                     </div>
                                 </li>
-                                <li>
+                                <li style={{paddingTop:'8px'}}>
                                     <button className="list-page">
                                         <FontAwesomeIcon icon={faList} />
                                     </button>
                                 </li>
-                                <li className="profile">
+                                <li className="profile" style={{paddingTop:'8px'}}>
                                         <span className="account-name">hoanbao32@gmail.com</span>
                                         <span className="acc-img" >
                                             <img src="../../../../img/92800926_2583147355287875_7869897360778723328_n.jpg" alt="account"/>
