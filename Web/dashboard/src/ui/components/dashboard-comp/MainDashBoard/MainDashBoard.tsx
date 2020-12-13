@@ -152,7 +152,10 @@ const Row1 = () => {
                        <h2>Recent Orders</h2>
                        <ul className="order-list">
                            <li className="order">
-                               <img src="https://www.caffesociety.co.uk/assets/recipe-images/cappuccino-small.jpg" alt=""/>
+                               <span className="order-img">
+                                   <span className="status-order processed">Processed</span>
+                                    <img src="https://www.caffesociety.co.uk/assets/recipe-images/cappuccino-small.jpg" alt=""/>
+                               </span>
                                <div className="order-info">
                                    <h3>Capuchino</h3>
                                    <p>Capuchino is very delicous</p>
@@ -160,7 +163,10 @@ const Row1 = () => {
                                </div>
                            </li>
                            <li className="order">
-                               <img src="https://www.caffesociety.co.uk/assets/recipe-images/cappuccino-small.jpg" alt=""/>
+                               <span className="order-img">
+                                   <span className="status-order on-hold">On hold</span>
+                                    <img src="https://www.caffesociety.co.uk/assets/recipe-images/cappuccino-small.jpg" alt=""/>
+                               </span>
                                <div className="order-info">
                                    <h3>Capuchino</h3>
                                    <p>Capuchino is very delicous</p>
@@ -168,7 +174,10 @@ const Row1 = () => {
                                </div>
                            </li>
                            <li className="order">
-                               <img src="https://www.caffesociety.co.uk/assets/recipe-images/cappuccino-small.jpg" alt=""/>
+                               <span className="order-img">
+                                   <span className="status-order processed">Processed</span>
+                                    <img src="https://www.caffesociety.co.uk/assets/recipe-images/cappuccino-small.jpg" alt=""/>
+                               </span>
                                <div className="order-info">
                                    <h3>Capuchino</h3>
                                    <p>Capuchino is very delicous</p>

@@ -62,10 +62,10 @@ const [state, setState] = React.useState({
                                         <FontAwesomeIcon icon={faList} />
                                     </button>
                                 </li>
-                                <li className="profile" style={{paddingTop:'8px'}}>
+                                <li className="profile" style={{paddingTop:'4px'}}>
                                         <span className="account-name">hoanbao32@gmail.com</span>
                                         <span className="acc-img" >
-                                            <img src="../../../../img/92800926_2583147355287875_7869897360778723328_n.jpg" alt="account"/>
+                                            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="account"/>
                                         </span>
                                 </li>
                             </ul>
