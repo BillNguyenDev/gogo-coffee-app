@@ -68,10 +68,11 @@
       transition: all 0.5s cubic-bezier(0.26, 0.06, 0.43, 0.15);
       border: 1px solid #e4e0e0;
       cursor: pointer;
-      &:hover {
-        background-color: #6f4e37;
+      &:focus {
+        background-color: #928c87;
         transition: all 0.5s;
         color: #fff;
+        border-color: #928c87;
       }
     }
 
