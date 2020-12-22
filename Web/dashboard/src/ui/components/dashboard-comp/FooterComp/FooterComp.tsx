@@ -8,7 +8,7 @@ export const FooterComp = () => {
                 <div className="container">
                 <div className="row-footer">
                     <div className="left">
-                        <span className="left-footer-item">GogoCoffee 2020</span>
+                        <span className="left-footer-item">&copy; GogoCoffee 2020</span>
                     </div>
                     <div className="right">
                         <span className="right-footer-item">Review</span>

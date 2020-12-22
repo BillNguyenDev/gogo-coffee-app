@@ -1,7 +1,7 @@
 #top-menu {
   background-color: #fff;
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
-  padding: 20px 30px;
+  padding: 20px 20px;
   z-index: 1030;
   position: fixed;
   width: 100%;
@@ -30,23 +30,39 @@
     li {
       display: inline;
     }
-    li:nth-child(2) input {
-      border: initial;
-      background: #e4e0e0;
-      outline: medium none invert !important;
-      outline: initial !important;
-      padding: 0.5rem 1rem;
-      line-height: 1.75;
-      font-size: 0.8rem;
-      color: #3a3a3a;
-      border-radius: 12px;
+    li:nth-child(2) {
+      input {
+        border: initial;
+        background: #e4e0e0;
+        outline: medium none invert !important;
+        outline: initial !important;
+        padding: 0.5rem 1rem;
+        line-height: 1.75;
+        font-size: 0.8rem;
+        color: #3a3a3a;
+        border-radius: 12px;
+      }
+      position: relative;
+      .search-icon {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        svg {
+          color: #cac0c0;
+          font-size: 17px;
+          font-weight: lighter;
+          &:hover {
+            color: #e2a5a5;
+            cursor: pointer;
+          }
+        }
+      }
     }
     li:nth-child(1) button {
       padding: 0.45rem 1rem;
       font-size: 0.8rem;
       line-height: 1.5;
       color: #3a3a3a;
-      margin-left: 10px;
       border-radius: 20px;
       outline: none;
       background-color: transparent;
@@ -195,4 +211,20 @@
 .MuiFilledInput-underline:before {
   content: "";
   width: 0 !important;
+}
+@media only screen and (max-width: 991px) {
+  #top-menu {
+    .left-navbar {
+      li:nth-child(4) button {
+        display: none;
+      }
+    }
+    .right-navbar {
+      .profile {
+        .account-name {
+          display: none;
+        }
+      }
+    }
+  }
 }

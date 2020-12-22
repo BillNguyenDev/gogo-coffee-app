@@ -15,6 +15,14 @@ export const SideBarComp = () => {
                 <li>UI</li>
                 <li>Menu</li>
             </ul>
+            <div className="sub-menu">
+                <ul className="dashboard">
+                    <li>Default</li>
+                    <li>Analytics</li>
+                    <li>Ecommerce</li>
+                    <li>Content</li>
+                </ul>
+            </div>
         </section>
         </>
     )

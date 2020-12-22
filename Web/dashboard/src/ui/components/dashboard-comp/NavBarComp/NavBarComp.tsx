@@ -6,6 +6,7 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import { faList } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Switch from '@material-ui/core/Switch';
 
 export const NavBarComp = () => {
@@ -34,6 +35,9 @@ const [state, setState] = React.useState({
                                 </li>
                                 <li>
                                     <input type="text" placeholder="Search"/>
+                                    <label className="search-icon" htmlFor="">
+                                        <FontAwesomeIcon icon={faSearch} />
+                                    </label>
                                 </li>
                                 <li>
                                     <button>ENG <FontAwesomeIcon icon={faCaretDown} /></button>

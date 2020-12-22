@@ -1,5 +1,6 @@
 #main-dashboard {
-  margin: 145px 60px 40px 30px;
+  margin: 145px 29px 40px 60px;
+  // transition: margin-left 0.3s;
   .grid-full {
     width: 100%;
     float: left;
@@ -165,7 +166,7 @@ li {
   display: inline-block;
 }
 .border-color {
-  border-color: #922c88 !important;
+  border-color: #9c6c20 !important;
 }
 .align-middle {
   vertical-align: middle !important;

@@ -11,12 +11,32 @@
   top: 70px;
   z-index: 300;
   bottom: 0;
+
   .tabs {
     li {
-      list-style-type: none;
       padding: 50px 20px;
       text-align: center;
       border-bottom: 1px solid #f1dcdc;
+      position: relative;
+      cursor: pointer;
+      &:focus-visible {
+        color: #6f4e37;
+      }
+    }
+  }
+  .sub-menu {
+    position: fixed;
+    width: 230px;
+    left: 124px;
+    height: 100vh;
+    z-index: 300;
+    top: 90px;
+    background-color: #fff;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #737272;
+    li {
+      padding: 16px 20px;
     }
   }
 }

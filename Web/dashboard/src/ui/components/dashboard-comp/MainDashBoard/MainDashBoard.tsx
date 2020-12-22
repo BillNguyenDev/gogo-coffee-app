@@ -300,14 +300,14 @@ const Row3 = () => {
                     direction="row"
                     justify="space-between"
                     alignItems="center" spacing={4}>
-                    <Grid item xl={6} lg={12}>
+                    <Grid item xl={6} lg={6} md={12}>
                         <div className="card">
                             <div className="card-body">
                                 <h2>Calendar</h2>
                             </div>
                         </div>
                     </Grid>
-                    <Grid item xl={6} lg={12}>
+                    <Grid item xl={6} lg={6} md={12}>
                         <div className="card">
                             <div className="card-body">
                                 <h2>Best Sellers</h2>
