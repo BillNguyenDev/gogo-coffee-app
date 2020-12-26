@@ -3,7 +3,7 @@ import './FooterComp.scss';
 import Grid from '@material-ui/core/Grid';
 export const FooterComp = () => {
     return (
-        <div>
+        <>
             <footer id="footer" className="grid-full">
                 <div className="container">
                 <div className="row-footer">
@@ -20,6 +20,6 @@ export const FooterComp = () => {
                  
                 </div>
             </footer>
-        </div>
+        </>
     )
 }

@@ -4,7 +4,7 @@ import './SideBarComp.scss';
 
 
 export const SideBarComp = () => {
-
+    
     return (
         <>
         <section id="vertical-sidebar">

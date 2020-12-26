@@ -10,12 +10,13 @@ li {
   list-style-type: none;
 }
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
+  opacity: 0.5;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: transparent;
 }
 
 /* Handle */
@@ -26,4 +27,7 @@ li {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background-color: #999;
+}
+body {
+  overflow-x: hidden;
 }

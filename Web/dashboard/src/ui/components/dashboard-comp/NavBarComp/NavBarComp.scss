@@ -33,14 +33,14 @@
     li:nth-child(2) {
       input {
         border: initial;
-        background: #e4e0e0;
-        outline: medium none invert !important;
+        background: #ececec75;
         outline: initial !important;
         padding: 0.5rem 1rem;
         line-height: 1.75;
         font-size: 0.8rem;
+        width: 100%;
         color: #3a3a3a;
-        border-radius: 12px;
+        border-radius: 2.1rem;
       }
       position: relative;
       .search-icon {
@@ -48,7 +48,7 @@
         right: 8px;
         top: 8px;
         svg {
-          color: #cac0c0;
+          color: #d7d7d7;
           font-size: 17px;
           font-weight: lighter;
           &:hover {
@@ -71,24 +71,59 @@
       border: none;
       cursor: pointer;
     }
-
+    .languages-switch {
+      position: relative;
+      cursor: pointer;
+      .languages {
+        border-radius: 0.75rem;
+        top: 50px;
+        right: 0px;
+        background: #fff;
+        min-width: 10rem;
+        padding: 0.5rem 0;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        position: absolute;
+        z-index: 200;
+        display: none;
+        li {
+          padding: 0.5rem 1.25rem;
+          color: #3a3a3a;
+          display: block;
+          text-align: left;
+          white-space: nowrap;
+          background-color: initial;
+          font-weight: 400;
+          cursor: pointer;
+          outline: none;
+          &:hover {
+            background-color: #f8f8f8;
+            color: #3a3a3a;
+          }
+          &:focus {
+            background-color: #6f4e37 !important;
+            color: #fff;
+          }
+        }
+      }
+      &:focus-within > .languages {
+        display: block;
+      }
+    }
     li:nth-child(3) button {
-      padding: 0.45rem 1rem;
+      padding: 0.6rem 1rem;
       font-size: 0.8rem;
       line-height: 1.5;
-      color: #3a3a3a;
+      color: #8f8f8f;
       border-radius: 20px;
       outline: none;
-      background-color: #e4e0e0;
+      background: #f8f8f8;
       text-transform: uppercase;
-      transition: all 0.5s cubic-bezier(0.26, 0.06, 0.43, 0.15);
-      border: 1px solid #e4e0e0;
+      border: initial;
       cursor: pointer;
       &:focus {
-        background-color: #928c87;
-        transition: all 0.5s;
-        color: #fff;
-        border-color: #928c87;
+        color: #212529;
+        background-color: #dae0e5;
+        border-color: #d3d9df;
       }
     }
 
@@ -109,59 +144,132 @@
         color: #fff;
       }
     }
-
-    .language-choose-form {
-      margin-left: 10px;
-      margin-right: 10px;
-      .language-choose {
-        border-radius: 12px;
-        background-color: #e4e0e0;
-        border-bottom: none !important;
-        padding: -27px -3px;
-        width: 70px;
-        height: 40px;
-      }
-    }
   }
   .right-navbar {
     float: right;
     display: flex;
-    flex-wrap: nowrap;
+    align-items: center;
+    .switch-btn {
+      position: relative;
+      outline: none;
+      background: #d7d7d7;
+      width: 34px;
+      height: 19px;
+      border-radius: 20px 20px;
+      cursor: pointer;
+      border: 1px solid #d7d7d7;
+      transition: all 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+      .switch-inside {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        background-color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+        transition: all 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+      }
+    }
+
     .notification {
       cursor: pointer;
-      .noti-icon {
-        font-size: 20px;
-        border-color: #3a3a3a;
-        margin-left: 20px;
-        color: #9c8989;
-      }
       position: relative;
+      outline: none;
+      .noti-icon {
+        font-size: 16px;
+        border-color: #3a3a3a;
+        color: #8f8f8f;
+        vertical-align: initial;
+      }
       .noti-quantities {
+        font-size: 9px;
+        color: #6f4e37;
+        border: 1px solid #6f4e37;
+        border-radius: 10px;
         position: absolute;
-        top: -4px;
-        right: -14px;
-        width: 16px;
-        border: 1px solid #e22323;
-        outline: none;
-        background-color: #e22323;
-        padding: 7px auto;
-        padding: 1px 0;
-        border-radius: 1rem;
+        width: 18px;
+        height: 15px;
         text-align: center;
-        font-size: 12px;
-        color: #fff;
-        font-weight: bold;
+        font-weight: 700;
+        top: -4px;
+        right: -4px;
+        line-height: 14px;
+      }
+      .noti-list {
+        position: absolute;
+        width: 260px;
+        padding: 20px 29px;
+        height: 280px;
+        top: 50px;
+        right: 0px;
+        border-radius: 0.75rem;
+        font-size: 0.8rem;
+        background: #fff;
+        z-index: 200;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease-in;
+        display: none;
+        .scrollbar-container {
+          margin-right: -15px;
+          padding-right: 15px;
+        }
+        .noti-ul {
+          height: 100%;
+          overflow: hidden;
+          &:hover {
+            overflow-y: overlay;
+          }
+          li {
+            display: flex;
+            text-align: left;
+            justify-content: flex-start;
+            border-bottom: 1px solid #eee;
+            padding: 17px 4px;
+          }
+          .noti-content {
+            p:nth-child(1) {
+              font-weight: 500;
+              font-size: 0.85rem;
+              line-height: 1.3rem;
+              font-family: "Nunito", sans-serif;
+            }
+            .date {
+              color: #ccc;
+            }
+          }
+          .padding {
+            padding-left: 7px;
+            padding-right: 28px;
+          }
+          .noti-img {
+            padding: 0px 40px 38px 0;
+            img {
+              height: 40px;
+              font-size: 1rem;
+              object-fit: cover;
+              width: unset !important;
+              max-width: unset;
+              border-radius: 50% !important;
+            }
+          }
+        }
+      }
+      &:focus-within > .noti-list {
+        display: block;
       }
     }
     li {
-      display: inline;
-      text-align: center;
+      padding: 8px 9px;
     }
     .profile {
       padding-left: 30px;
+      padding-top: 4px;
       display: flex;
       flex-wrap: nowrap;
       cursor: pointer;
+      position: relative;
+      outline: none;
       button {
         background-color: transparent;
         border: transparent;
@@ -172,7 +280,7 @@
       .account-name {
         color: #878787;
         font-size: 15px;
-        padding-top: 7px;
+        padding-top: 12px;
       }
       .acc-img {
         padding-left: 3px;
@@ -182,9 +290,87 @@
           height: 35px;
         }
       }
+      .profile-dropdown {
+        border-radius: 0.75rem;
+        top: 50px;
+        right: 5px;
+        background: #fff;
+        min-width: 10rem;
+        padding: 0.5rem 0;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        position: absolute;
+        z-index: 200;
+        display: none;
+        text-align: left;
+        li {
+          padding: 0.5rem 1.25rem;
+          color: #878787;
+          display: block;
+          text-align: left;
+          white-space: nowrap;
+          background-color: initial;
+          font-weight: 400;
+          cursor: pointer;
+          outline: none;
+          font-size: 15px;
+          width: 100%;
+          &:hover {
+            background-color: #f8f8f8;
+          }
+          &:focus {
+            background-color: #6f4e37 !important;
+          }
+        }
+        .line {
+          border-top: 1px solid #e9ecef;
+          overflow: hidden;
+          height: 0;
+          border-color: #d7d7d7;
+          padding: 4px 0;
+          margin-top: 7px;
+          &:hover {
+            background-color: inherit;
+          }
+        }
+      }
+      &:focus-within > .profile-dropdown {
+        display: block;
+      }
     }
-    .list-page {
-      margin-left: 30px;
+    .icons-menu-dropdown {
+      position: relative;
+      cursor: pointer;
+      outline: none;
+      .pages-list {
+        position: absolute;
+        display: none;
+        width: 240px;
+        padding: 1.5rem !important;
+        height: 280px;
+        top: 50px;
+        right: 0px;
+        border-radius: 0.75rem;
+        background: #fff;
+        z-index: 200;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease-in;
+        .icon-menu-item {
+          width: 90px;
+          display: inline-block;
+          text-align: center;
+          margin-bottom: 1.7rem;
+          color: rgba(58, 58, 58, 0.8);
+          .icon-item {
+            width: 100%;
+            font-size: 28px;
+          }
+        }
+      }
+      &:focus-within > .pages-list {
+        display: block;
+      }
+    }
+    .full-screen-btn {
       background-color: transparent;
       border: none;
       outline: none;
