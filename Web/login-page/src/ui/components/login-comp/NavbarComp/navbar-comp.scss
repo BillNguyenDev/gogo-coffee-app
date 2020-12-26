@@ -113,13 +113,16 @@ li {
   visibility: hidden;
   transform: translate(0, -30px);
   transition: all 0.3s ease-in-out;
+  li {
+    color: #000;
+  }
 }
 .dropdown2 {
   position: absolute;
   top: 68px;
   left: 12px;
   height: auto;
-  background-color: #fff;
+  background-color: #bd8d3d;
   border-radius: 10px;
   visibility: hidden;
   opacity: 0;
@@ -134,9 +137,6 @@ li {
   visibility: visible;
   opacity: 1;
   transform: translateY(-1%);
-}
-.list-child li {
-  color: #000;
 }
 
 .action {

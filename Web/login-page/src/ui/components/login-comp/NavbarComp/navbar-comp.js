@@ -7,9 +7,6 @@ const NavBarComp = () => {
     return (
         <>
             {/* <FontAwesomeIcon icon="bars" className="bars" /> */}
-
-
-
             <section id="top-menu" className="grid-full">
                 <div className="action">
                     <div className="hidden-logo">

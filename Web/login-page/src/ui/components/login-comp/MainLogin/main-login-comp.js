@@ -59,9 +59,9 @@ const FormLogin = () => {
 const MainLoginComp = () => {
     return (
         <div className="background">
-            <div className="container container-flex">
+            <div className="container main">
                 <div className="row">
-                    <div className="col-xl-6 col-sm-12 title-container text-center">
+                    <div className="col-xl-6 col-md-12 title-container text-center">
                         <div className="welcome">
                             <h4>Welcome to</h4>
                         </div>
@@ -77,7 +77,7 @@ const MainLoginComp = () => {
                                 </button>
                         </div>
                     </div>
-                    <div className="col-xl-6 col-sm-12 login">
+                    <div className="col-xl-6 col-md-12 login">
                         <div className="text-center">
                             <FormLogin />
                         </div>

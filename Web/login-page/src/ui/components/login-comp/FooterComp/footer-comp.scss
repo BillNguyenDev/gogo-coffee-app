@@ -62,8 +62,14 @@
     }
   }
 }
-@media only screen and (max-width: 900px) {
+@media (max-width: 1384px) {
   .footer-content {
-    padding-right: 4rem;
+    margin-left: 7rem;
+    padding: 0 113px;
+  }
+}
+@media (max-width: 1093px) {
+  .footer-content {
+    margin-left: 0;
   }
 }
