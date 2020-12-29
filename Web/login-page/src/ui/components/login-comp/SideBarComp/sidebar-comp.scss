@@ -1,20 +1,48 @@
 #side-bar {
   height: 100%;
-  width: 127px;
+  width: 80px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #fff;
-  overflow-x: hidden;
   padding-top: 20px;
-  background-color: #270602;
+  background-color: #63170e;
+  overflow-y: visible;
   .menu-sidebar {
-    padding: 8rem 2rem;
-  }
-  .menu-sidebar li {
-    margin-top: 20px;
-    color: #b7592a;
+    margin-top: 8rem;
+    .menu-item {
+      padding: 0 22px;
+      margin-top: 20px;
+      .menu-item-link {
+        position: relative;
+        color: #b7592a;
+        padding: 8px;
+        border-radius: 12px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: #88180b;
+          box-shadow: 0px 1px 3px 2px #501710;
+        }
+        .menu-item-name {
+          white-space: nowrap;
+          position: absolute;
+          z-index: 99999;
+          right: -77px;
+          top: 50%;
+          margin-top: -11.5px;
+          transition: all 0.3s ease-in-out 0s;
+          p {
+            padding: 0 12px;
+            border-radius: 200px;
+            background-color: #c5c247;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            line-height: 24px;
+          }
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width: 1100px) {

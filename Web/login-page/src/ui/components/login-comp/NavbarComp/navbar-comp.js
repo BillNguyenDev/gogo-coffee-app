@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import './navbar-comp.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/fontawesome-free-solid';
-import { faThLarge } from '@fortawesome/fontawesome-free-solid';
+import SimpleLineIcon from 'react-simple-line-icons';
+import logo from './../../../../img/logo3.png';
 const NavBarComp = () => {
     return (
         <>
@@ -10,7 +11,7 @@ const NavBarComp = () => {
             <section id="top-menu" className="grid-full">
                 <div className="action">
                     <div className="hidden-logo">
-                        <img src="../../../../img/png-clipart-brown-coffee-mug-logo-coffee-cup-cappuccino-cafe-hot-coffee-diagram-glass-hand.png" alt="" width="60px" height="50px" />
+                        <img src={logo} alt="" width="60px" height="50px" />
                     </div>
                     <div className="icon-bars">
                         <i></i>
@@ -20,34 +21,38 @@ const NavBarComp = () => {
                 </div>
                 <ul className="left">
                     <li className="logo">
-                        <img src="../../../../img/png-clipart-brown-coffee-mug-logo-coffee-cup-cappuccino-cafe-hot-coffee-diagram-glass-hand.png" width="60px" height="50px" alt="" />
+                        <img src={logo} alt="" width="60px" height="50px" />
                                 Gogo Coffee
                         </li>
-                    <li><FontAwesomeIcon icon={faThLarge} /></li>
+                    <li>
+                        <SimpleLineIcon name="grid" />
+                    </li>
                     <li>Home</li>
                     <li className="li-parent">Feature <FontAwesomeIcon icon="chevron-down" className="chevron-down-icon" />
                         <div className="dropdown1">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-4">
-                                        <ul className="list-child">
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
+                                        <ul className="ul-child">
+                                            <li className="li-child-title">Download</li>
+                                            <li className="li-child-item">App Store</li>
+                                            <li className="li-child-item">Google Play</li>
                                         </ul>
                                     </div>
                                     <div className="col-md-4">
-                                        <ul className="list-child">
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
+                                        <ul className="ul-child">
+                                            <li className="li-child-title">Users</li>
+                                            <li className="li-child-item">Profile</li>
+                                            <li className="li-child-item">Staffs</li>
+                                            <li className="li-child-item">Clients</li>
+                                            <li className="li-child-item">Admin</li>
                                         </ul>
                                     </div>
                                     <div className="col-md-4">
-                                        <ul className="list-child">
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
+                                        <ul className="ul-child">
+                                            <li className="li-child-title">Pages</li>
+                                            <li className="li-child-item">Client</li>
+                                            <li className="li-child-item">Admin dashboard</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -56,9 +61,9 @@ const NavBarComp = () => {
                     </li>
                     <li className="li-parent">More <FontAwesomeIcon icon="chevron-down" className="chevron-down-icon" />
                         <div className="dropdown2">
-                            <ul className="list-child">
-                                <li>Option1</li>
-                                <li>Option2</li>
+                            <ul className="ul-child">
+                                <li>Other items</li>
+                                <li>Our website</li>
                             </ul>
                         </div>
                     </li>

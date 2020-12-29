@@ -1,0 +1,25 @@
+#nav-widget-small-device {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  height: 100vh;
+  width: 300px;
+  padding-bottom: 40px;
+  padding-top: 0;
+  display: none;
+}
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
