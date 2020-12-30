@@ -8,7 +8,113 @@
   width: 300px;
   padding-bottom: 40px;
   padding-top: 0;
-  display: none;
+  overflow: hidden;
+  &::-webkit-scrollbar {
+    transition: all 0.5s ease;
+    width: 5px;
+    border-radius: 12px;
+    opacity: 0.5;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(182, 179, 179, 0.822);
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #808080;
+    opacity: 1;
+  }
+  &:hover {
+    overflow-y: overlay;
+  }
+  .close-arrow-button {
+    width: 100%;
+    text-align: right;
+    padding: 10px 12px 10px 0;
+    margin-bottom: 5rem;
+    button {
+      background: transparent;
+      outline: none;
+      border: none;
+      .arrow-left-icon {
+        font-size: 14px;
+        color: #070756;
+      }
+    }
+  }
+  .login-btn {
+    width: 100%;
+    text-align: center;
+    button {
+      text-align: center;
+      padding: 14px 0;
+      background-color: #ff3a3a;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      transition: all 0.3s;
+      color: #fff;
+      font-weight: 600;
+      width: 80%;
+      &:hover {
+        background-color: #e22222 !important;
+        box-shadow: 0px 2px 10px #bd4949 !important;
+      }
+    }
+  }
+  #section {
+    width: 100%;
+    margin-top: 2rem;
+    .section-title {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 10px;
+      color: #808080;
+      padding-left: 2rem;
+    }
+    .menu-sidebar {
+      margin-top: 1rem;
+      .menu-item {
+        padding: 0 22px;
+        margin-top: 10px;
+        position: relative;
+        .menu-item-link {
+          display: flex;
+          align-items: center;
+          color: #b7592a;
+          position: relative;
+          padding: 6px 16px 6px 38px;
+          transition: all 0.2s ease-in;
+          border-radius: 12px;
+          cursor: pointer;
+          &:hover {
+            padding-left: 42px;
+            text-decoration: none;
+          }
+          .menu-item-icon {
+            position: absolute;
+            top: 13px;
+            left: 8px;
+            pointer-events: none;
+          }
+        }
+        .color-hover:hover {
+          color: #b9ad1e;
+        }
+        .box-shadow-hover {
+          &:hover {
+            box-shadow: -2px 1px 18px -6px #a59d9d;
+          }
+        }
+        .menu-sidebar-child {
+          position: absolute;
+          top: 30px;
+          left: 20px;
+        }
+      }
+    }
+  }
 }
 .overlay {
   position: fixed;
@@ -20,6 +126,4 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
-  cursor: pointer;
-  display: none;
 }
