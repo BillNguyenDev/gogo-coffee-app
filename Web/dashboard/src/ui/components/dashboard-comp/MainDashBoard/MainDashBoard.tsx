@@ -1,17 +1,7 @@
 import React from 'react'
 import './MainDashBoard.scss';
 import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import { MDBIcon} from 'mdbreact';
-// import Table from '@material-ui/core/Table';
-// import TableBody from '@material-ui/core/TableBody';
-// import TableCell from '@material-ui/core/TableCell';
-// import TableContainer from '@material-ui/core/TableContainer';
-// import TableHead from '@material-ui/core/TableHead';
-// import TablePagination from '@material-ui/core/TablePagination';
-// import TableRow from '@material-ui/core/TableRow';
-// import { SideBarComp } from '../SideBarComp/SideBarComp';
 
 const MainTitle = () => {
     return (
@@ -29,113 +19,6 @@ const MainTitle = () => {
         </>
     )
 }
-// interface Column {
-//   id: 'name' | 'sales' | 'stock' ;
-//   label: string;
-//   minWidth?: number;
-//   align?: 'right';
-//   format?: (value: number) => string;
-// }
-
-// const columns: Column[] = [
-//   { id: 'name', label: 'Name', minWidth: 170 },
-//   { id: 'sales', label: 'Sales', minWidth: 100 },
-//   {
-//     id: 'stock',
-//     label: 'Stock',
-//     minWidth: 170,
-//     align: 'right',
-//     format: (value: number) => value.toLocaleString('en-US'),
-//   }
-// ];
-
-// interface Data {
-//   name: string;
-//   sales: number;
-//   stock: number;
-// }
-
-// function createData(name: string, sales: number, stock: number): Data {
-//   return { name, sales, stock };
-// }
-
-// const rows = [
-//   createData('Bebinca', 574, 16),
-//   createData('Cheesecake', 887, 21),
-//   createData('Chocolate Cake', 1080, 57),
-//   createData('Cremeschnitte', 562, 9),
-// ];
-
-// const useStyles = makeStyles({
-//   root: {
-//     width: '100%',
-//   },
-//   container: {
-//     maxHeight: 440,
-//   },
-// });
-
-// const  StickyHeadTable = () => {
-//   const classes = useStyles();
-//   const [page, setPage] = React.useState(0);
-//   const [rowsPerPage, setRowsPerPage] = React.useState(10);
-
-//   const handleChangePage = (event: unknown, newPage: number) => {
-//     setPage(newPage);
-//   };
-
-//   const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
-//     setRowsPerPage(+event.target.value);
-//     setPage(0);
-//   };
-
-//   return (
-//     <Paper className={classes.root}>
-//       <TableContainer className={classes.container}>
-//         <Table stickyHeader aria-label="sticky table">
-//           <TableHead>
-//             <TableRow>
-//               {columns.map((column) => (
-//                 <TableCell 
-//                   key={column.id}
-//                   align={column.align}
-//                   style={{ minWidth: column.minWidth }}
-//                 >
-//                   {column.label}
-//                 </TableCell>
-//               ))}
-//             </TableRow>
-//           </TableHead>
-//           <TableBody>
-//             {rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row) => {
-//               return (
-//                 <TableRow hover role="checkbox" tabIndex={-1} key={row.name}>
-//                   {columns.map((column) => {
-//                     const value = row[column.id];
-//                     return (
-//                       <TableCell key={column.id} align={column.align}>
-//                         {column.format && typeof value === 'number' ? column.format(value) : value}
-//                       </TableCell>
-//                     );
-//                   })}
-//                 </TableRow>
-//               );
-//             })}
-//           </TableBody>
-//         </Table>
-//       </TableContainer>
-//       <TablePagination
-//         rowsPerPageOptions={[5, 10, 15]}
-//         component="div"
-//         count={rows.length}
-//         rowsPerPage={rowsPerPage}
-//         page={page}
-//         onChangePage={handleChangePage}
-//         onChangeRowsPerPage={handleChangeRowsPerPage}
-//       />
-//     </Paper>
-//   );
-// }
 
 const Row1 = () => {
     return (
@@ -151,7 +34,7 @@ const Row1 = () => {
                 <Grid item xl={6} lg={6}  md={12} sm={12}>
                    <div className="card">
                        <div className="card-body">
-                       <h2>Recent Orders</h2>
+                       <div className="card-title">Recent Orders</div>
                        <ul className="order-list">
                            <li className="order">
                                <span className="order-img">
@@ -206,14 +89,14 @@ const Row2 = () => {
                 <Grid item xl={4} lg={4} md={12} sm={12}>
                     <div className="card">
                         <div className="card-body">
-                            <h2>Product Categories</h2>
+                            <div className="card-title">Product Categories</div>
                         </div>
                     </div>
                 </Grid>
                 <Grid item xl={4} lg={4} md={12} sm={12}>
                     <div className="card">
                         <div className="card-body">
-                            <h2>Logs</h2>
+                            <div className="card-title">Logs</div>
                             <div className="dashboard-logs">
                                     <table>
                                         <tbody>
@@ -307,7 +190,7 @@ const Row2 = () => {
                 <Grid item xl={4} lg={4} md={12} sm={12}>
                     <div className="card card-width">
                         <div className="card-body">
-                            <h2>Tickets</h2>
+                            <div className="card-title">Tickets</div>
                                 <ul className="tickets-list">
                                     <li>
                                         <img className="ticket-creator-img" src="https://gogo-react.coloredstrategies.com/assets/img/profiles/l-1.jpg" alt=""/>
@@ -357,15 +240,14 @@ const Row3 = () => {
                     <Grid item xl={6} lg={6} md={12}>
                         <div className="card">
                             <div className="card-body">
-                                <h2>Calendar</h2>
+                                <div className="card-title">Calendar</div>
                             </div>
                         </div>
                     </Grid>
                     <Grid item xl={6} lg={6} md={12}>
                         <div className="h-100 card">
                             <div className="card-body">
-                                <h2>Best Sellers</h2>
-                                {/* <StickyHeadTable/> */}
+                                <div className="card-title">Best Sellers</div>
                                 <table className="best-sellers-list">
                                     <tbody>
                                         <tr>
@@ -451,7 +333,7 @@ const Row4 = () => {
                 <Grid item lg={6} sm={12}>
                     <div className="card">
                         <div className="card-body">
-                            <h2>Profile Status</h2>
+                            <div className="card-title">Profile Status</div>
                             <ul className="status-list">
                                 <li>
                                     <div className="status-name">
@@ -525,7 +407,7 @@ const Row4 = () => {
                 <Grid item lg={6} sm={12}>
                      <div className="card">
                         <div className="card-body">
-                            <h2>Cakes</h2>
+                            <div className="card-title">Cakes</div>
                         </div>
                     </div>
                 </Grid>
@@ -546,41 +428,80 @@ const Row5 = () => {
                             <Grid item lg={3} xl={3} md={6} sm={12}>
                                 <div className="card ">
                                     <div className="card-body">
-                                        <h2 className="card-title">Payment Status</h2>
-                                        <div className="status-percentage">
-                                            <span>64%</span>
-                                            <div className="pie">
-                                                <div className="left-side half-circle"></div>
-                                                <div className="right-side half-circle"></div>
-                                                <div className="shadow"></div>
-                                            </div>
-                                        </div>
+                                        <div className="card-title">Payment Status</div>
                                     </div>
                                 </div>
                             </Grid>
                              <Grid item lg={3} xl={3} md={6} sm={12}>
                                  <div className="card justify-content-center">
                                     <div className="card-body">
-                                        <h2 className="card-title">Payment Done</h2>
+                                        <div className="card-title">Payment Done</div>
                                     </div>
                                 </div>
                             </Grid>
                              <Grid item lg={3} xl={3} md={6} sm={12}>
                                  <div className="card justify-content-center">
                                     <div className="card-body">
-                                        <h2 className="card-title">Tasks Done</h2>
+                                        <div className="card-title">Tasks Done</div>
                                     </div>
                                 </div>
                             </Grid>
                              <Grid item lg={3} xl={3} md={6} sm={12}>
                                  <div className="card justify-content-center">
                                     <div className="card-body">
-                                        <h2 className="card-title">Work Progress</h2>
+                                        <div className="card-title">Work Progress</div>
                                     </div>
                                 </div>
                             </Grid>
                 </Grid>
             </div>
+        </>
+    )
+}
+const Row6 = () => {
+    return (
+        <>
+            <div className="row">
+          <Grid container
+            direction="row"
+            justify="space-between"
+            alignItems="center" spacing={2}>
+                <Grid item lg={6} sm={12}>
+                    <div className="card">
+                        <div className="card-body">
+                            <div className="float-left">
+                                <div className="card-title bottom-0">Website Visits</div>
+                                <div className="short-description-text">Unique Visitors</div>
+                            </div>
+                            <div className="float-right">
+                                <button className="first-outline-color">This week</button>
+                                <ul className="week-dropdown">
+                                        <li>Last week</li>
+                                        <li>This month</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </Grid>
+                <Grid item lg={6} sm={12}>
+                     <div className="card">
+                        <div className="card-body">
+                            <div className="float-left">
+                                <div className="card-title bottom-0">Conversion Rates</div>
+                                <div className="short-description-text">Per Session</div>
+                            </div>
+                            <div className="float-right">
+                                <button className="second-outline-color">This week</button>
+                                <ul className="week-dropdown">
+                                        <li>Last week</li>
+                                        <li>This month</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </Grid>
+            </Grid>
+        </div>
         </>
     )
 }
@@ -592,6 +513,7 @@ const MainContent = () => {
             <Row3/>
             <Row4/>
             <Row5/>
+            <Row6/>
         </>
     )
 }

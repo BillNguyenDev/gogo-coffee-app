@@ -3,19 +3,15 @@ import Grid from '@material-ui/core/Grid';
 import './NavBarComp.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
-import { faBell } from '@fortawesome/free-solid-svg-icons';
-import { faThLarge } from '@fortawesome/free-solid-svg-icons';
 import { faExpandArrowsAlt } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faStore } from '@fortawesome/free-solid-svg-icons';
 import { faChartBar } from '@fortawesome/free-solid-svg-icons';
-import { faInbox } from '@fortawesome/free-solid-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import { faComment } from '@fortawesome/free-solid-svg-icons';
+import { faThLarge } from '@fortawesome/free-solid-svg-icons';
 import { MDBIcon} from 'mdbreact';
-import Switch from '@material-ui/core/Switch';
-
+// import SimpleLineIcon from 'react-simple-line-icons';
 export const NavBarComp = () => {
 const [state, setState] = React.useState({
     checkedA: true,
@@ -78,6 +74,7 @@ const Click = () =>{
                                     </button>
                                 </li>
                                 <li tabIndex={0} className="icons-menu-dropdown">
+                                    {/* <SimpleLineIcon name="grid" /> */}
                                     <FontAwesomeIcon icon={faThLarge} />
                                     <div  className="pages-list">
                                         <div className="icon-menu-item">

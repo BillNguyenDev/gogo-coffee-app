@@ -44,8 +44,94 @@
       box-shadow: 9px 30px 44px rgba(65, 64, 64, 0.04);
       .card-body {
         padding: 1.75rem;
-        h2 {
+        .card-title {
+          font-size: 1.1rem;
+          text-align: left;
           margin-bottom: 1.5rem;
+        }
+        .float-left {
+          float: left;
+          .bottom-0 {
+            margin-bottom: 0 !important;
+          }
+          .short-description-text {
+            font-size: 0.76rem;
+            color: #909090 !important;
+          }
+        }
+        .float-right {
+          float: right;
+          position: relative;
+          button {
+            cursor: pointer;
+            background-color: transparent;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.76rem;
+            border-radius: 12px;
+
+            text-align: center;
+            outline: none;
+
+            transition: color 0.15s ease-in-out,
+              background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+              box-shadow 0.15s ease-in-out;
+            font-weight: 400;
+            border-radius: 50px;
+
+            &::after {
+              display: inline-block;
+              margin-left: 0.255em;
+              vertical-align: 0.255em;
+              content: "";
+              border-top: 0.3em solid;
+              border-right: 0.3em solid transparent;
+              border-bottom: 0;
+              border-left: 0.3em solid transparent;
+            }
+          }
+          .first-outline-color {
+            color: #6f4e37;
+            border: 1px solid #6f4e37;
+            &:hover {
+              background-color: #6f4e37;
+              color: #fff;
+            }
+          }
+          .second-outline-color {
+            color: #4556ac;
+            border: 1px solid #4556ac;
+            &:hover {
+              background-color: #4556ac;
+              color: #fff;
+            }
+          }
+          .week-dropdown {
+            border-radius: 0.75rem;
+            top: 27px;
+            right: 0px;
+            background: #fff;
+            min-width: 10rem;
+            padding: 0.5rem 0;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            position: absolute;
+            z-index: 200;
+            display: none;
+            li {
+              padding: 0.5rem 1.25rem;
+              color: #3a3a3a;
+              display: block;
+              text-align: left;
+              white-space: nowrap;
+              background-color: initial;
+              font-weight: 400;
+              cursor: pointer;
+              outline: none;
+              &:hover {
+                background-color: #f8f8f8;
+                color: #3a3a3a;
+              }
+            }
+          }
         }
         .order-list {
           height: 500px;
@@ -308,57 +394,6 @@
                   background-color: transparent !important;
                 }
               }
-            }
-          }
-        }
-        .card-title {
-          float: left;
-        }
-        .status-percentage {
-          position: relative;
-          width: 50px;
-          height: 50px;
-          float: right;
-          position: relative;
-          span {
-            position: absolute;
-            z-index: 1;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 12px;
-            display: block;
-            text-align: center;
-            white-space: nowrap;
-            border-radius: 50%;
-          }
-          .pie {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            right: 0;
-            top: 0;
-            .left-side {
-              transform: rotate(162deg);
-            }
-            .right-side {
-              display: none;
-            }
-            .half-circle {
-              border-color: #1abc9c;
-              height: 100%;
-              width: 100%;
-              border: 1px solid #3498db;
-              border-radius: 50%;
-              left: 0;
-              position: absolute;
-              top: 0;
-            }
-            .shadow {
-              height: 100%;
-              width: 100%;
-              border: 1px solid #bdc3c7;
-              border-radius: 50%;
             }
           }
         }
