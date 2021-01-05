@@ -6,18 +6,28 @@ export const FooterComp = () => {
         <>
             <footer id="footer" className="grid-full">
                 <div className="container">
-                <div className="row-footer">
-                    <div className="left">
-                        <span className="left-footer-item">&copy; GogoCoffee 2020</span>
-                    </div>
-                    <div className="right">
-                        <span className="right-footer-item">Review</span>
-                        <span className="right-footer-item">Purchase</span>
-                        <span className="right-footer-item">Docs</span>
-                    </div>
-                </div>
-
-                 
+                    <div className="row-footer">
+                        <div className="left">
+                            <span className="left-footer-item">&copy; GogoCoffee 2020</span>
+                        </div>
+                        <div className="right">
+                            <span className="right-footer-item">
+                                <a>
+                                    Review        
+                                </a>
+                            </span>
+                            <span className="right-footer-item">
+                                <a>
+                                    Purchase        
+                                </a>
+                            </span>
+                            <span className="right-footer-item">
+                                <a>
+                                    Docs      
+                                </a>
+                            </span>
+                        </div>
+                    </div>                 
                 </div>
             </footer>
         </>

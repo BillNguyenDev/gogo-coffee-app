@@ -217,6 +217,20 @@
         .noti-ul {
           height: 100%;
           overflow: hidden;
+          &::-webkit-scrollbar {
+            width: 4px !important;
+            opacity: 0.5 !important;
+          }
+          &::-webkit-scrollbar-track {
+            background-color: transparent !important;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #e6e1e1 !important;
+            border-radius: 12px !important;
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background-color: #999 !important;
+          }
           &:hover {
             overflow-y: overlay;
           }

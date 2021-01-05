@@ -237,14 +237,192 @@ const Row3 = () => {
                     direction="row"
                     justify="space-between"
                     alignItems="center" spacing={2}>
-                    <Grid item xl={6} lg={6} md={12}>
+                    <Grid item xl={6} lg={6} md={12} sm={12}>
                         <div className="card">
                             <div className="card-body">
                                 <div className="card-title">Calendar</div>
+                                <div className="month-year-btns">
+                                    <span className="month-year">January 2021</span>
+                                    <div className="calendar-btns-group">
+                                        <button className="today-btn">Today</button>
+                                        <button className="nav-btn">
+                                                <MDBIcon icon="chevron-left" />
+                                            </button>
+                                        <button className="nav-btn">
+                                                <MDBIcon icon="chevron-right" />
+                                            </button>
+                                    </div>
+                                </div>
+                                    <table className="calendar">
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <div>Sun</div>
+                                            </th>
+                                            <th>
+                                                <div>Mon</div>
+                                            </th>
+                                            <th>
+                                                <div>Tue</div>
+                                            </th>
+                                            <th>
+                                                <div>Wed</div>
+                                            </th>
+                                            <th>
+                                                <div>Thu</div>
+                                            </th>
+                                            <th>
+                                                <div>Fri</div>
+                                            </th>
+                                            <th className="border-right-none">
+                                                <div>Sat</div>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                           <td>
+                                               <div className="day faded-day">27</div>
+                                            </td>
+                                           <td>
+                                               <div className="day faded-day">28</div>
+                                            </td>
+                                           <td>
+                                               <div className="day faded-day">29</div>
+                                            </td>
+                                           <td>
+                                               <div className="day faded-day">30</div>
+                                            </td>
+                                           <td>
+                                               <div className="day faded-day">31</div>
+                                            </td>
+                                           <td>
+                                               <div className="day">01</div>
+                                            </td>
+                                           <td className="border-right-none">
+                                               <div className="day">02</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                           <td>
+                                               <div className="day">03</div>
+                                            </td>
+                                           <td>
+                                               <div className="day">04</div>
+                                            </td>
+                                           <td>
+                                               <div className="day">05</div>
+                                            </td>
+                                           <td>
+                                               <div className="day today">06</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">07</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">08</div>
+                                           </td>
+                                           <td className="border-right-none">
+                                               <div className="day">09</div>
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div className="day">10</div>
+                                            </td>
+                                           <td>
+                                               <div className="day">11</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">12</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">13</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">14</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">15</div>
+                                           </td>
+                                           <td className="border-right-none">
+                                               <div className="day">16</div>
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                              <div className="day">17</div>
+                                          </td>
+                                           <td>
+                                               <div className="day">18</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">19</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">20</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">21</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">22</div>
+                                           </td>
+                                           <td className="border-right-none">
+                                               <div className="day">23</div>
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                              <div className="day">24</div>
+                                          </td>
+                                           <td>
+                                               <div className="day">25</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">26</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">27</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">28</div>
+                                           </td>
+                                           <td>
+                                               <div className="day">29</div>
+                                           </td>
+                                           <td className="border-right-none">
+                                               <div className="day">30</div>
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{borderBottom:'none'}}>
+                                               <div className="day">31</div>
+                                           </td>
+                                          <td style={{borderBottom:'none'}}>
+                                              <div className="day faded-day">01</div>
+                                          </td>
+                                           <td style={{borderBottom:'none'}}>
+                                               <div className="day faded-day">02</div>
+                                           </td>
+                                           <td style={{borderBottom:'none'}}>
+                                               <div className="day faded-day">03</div>
+                                           </td>
+                                           <td style={{borderBottom:'none'}}>
+                                               <div className="day faded-day">04</div>
+                                           </td>
+                                           <td style={{borderBottom:'none'}}>
+                                               <div className="day faded-day">05</div>
+                                           </td>
+                                           <td className="border-right-none" style={{borderBottom:'none'}}>
+                                               <div className="day faded-day">06</div>
+                                           </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
                             </div>
                         </div>
                     </Grid>
-                    <Grid item xl={6} lg={6} md={12}>
+                    <Grid item xl={6} lg={6} md={12} sm={12}>
                         <div className="h-100 card">
                             <div className="card-body">
                                 <div className="card-title">Best Sellers</div>
@@ -330,7 +508,7 @@ const Row4 = () => {
             direction="row"
             justify="space-between"
             alignItems="center" spacing={2}>
-                <Grid item lg={6} sm={12}>
+                <Grid item lg={4} sm={12}>
                     <div className="card">
                         <div className="card-body">
                             <div className="card-title">Profile Status</div>
@@ -404,10 +582,49 @@ const Row4 = () => {
                         </div>
                     </div>
                 </Grid>
-                <Grid item lg={6} sm={12}>
+                <Grid item lg={4} md={6} sm={12}>
+                    <div className="card banner">
+                        <div className="card-body">
+                            <span className="brand-app">
+                                Gogo Coffee
+                            </span>
+                            <div className="banner-main-text">
+                                Magic is in the Details
+                            </div>
+                            <p className="small-white-text">Yes,it is indeed</p>
+                        </div>
+                    </div>
+                </Grid>
+                <Grid item lg={4} md={6} sm={12}>
                      <div className="card">
                         <div className="card-body">
                             <div className="card-title">Cakes</div>
+                            <ul className="cakes-list">
+                                <li>Marble Cake</li>
+                                <li>Fruitcake</li>
+                                <li>Chocolate Cake</li>
+                                <li>Fat Rascal</li>
+                                <li>Financier</li>
+                                <li>Genoise</li>
+                                <li>Gingerbread</li>
+                                <li>Goose Breast</li>
+                                <li>Parkin</li>
+                                <li>Salzburger Nockerl</li>
+                                <li>Soufflé</li>
+                                <li>Merveilleux</li>
+                                <li>Streuselkuchen</li>
+                                <li>Tea Loaf</li>
+                                <li>Napoleonshat</li>
+                                <li>Merveilleux</li>
+                                <li>Magdalena</li>
+                                <li>Cremeschnitte</li>
+                                <li>Cheesecake</li>
+                                <li>Bebinca</li>
+                                <li>Salzburger Nockerl</li>
+                                <li>Soufflé</li>
+                                <li>Merveilleux</li>
+                                <li>Streuselkuchen</li>
+                            </ul>
                         </div>
                     </div>
                 </Grid>

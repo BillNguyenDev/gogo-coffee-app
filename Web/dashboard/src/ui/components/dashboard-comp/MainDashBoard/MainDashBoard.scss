@@ -1,12 +1,12 @@
 #main-dashboard {
-  margin: 145px 29px 40px 60px;
+  margin: 145px 44px 40px 160px;
   // transition: margin-left 0.3s;
   .grid-full {
     width: 100%;
     float: left;
   }
   .container {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
   }
   .main-title {
@@ -48,6 +48,107 @@
           font-size: 1.1rem;
           text-align: left;
           margin-bottom: 1.5rem;
+        }
+        .cakes-list {
+          max-width: 100%;
+          height: auto;
+          column-count: 2;
+          li {
+            margin-bottom: 0.25rem;
+            color: #3a3a3a;
+            transition: color 0.2s;
+            cursor: pointer;
+            font-size: 14px;
+            &:hover {
+              color: #6f4e37;
+              text-decoration: initial;
+            }
+          }
+        }
+        .month-year-btns {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+          .nav-btn {
+            text-align: center;
+            border-radius: 50%;
+            background-color: #6f4e37;
+            border: none;
+            color: #fff;
+            margin-left: 10px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            outline: none;
+            &:hover {
+              background-color: transparent;
+              border: 1px solid #6f4e37;
+              color: #6f4e37;
+            }
+          }
+          .today-btn {
+            padding: 10px 20px;
+            min-width: 30px;
+            height: auto;
+            line-height: 0.9;
+            font-size: 13px;
+            outline: initial !important;
+            box-shadow: none !important;
+            text-align: center;
+            border-radius: 15px;
+            background-color: #6f4e37;
+            border: none;
+            color: #fff;
+            margin-left: 10px;
+            cursor: pointer;
+            &:hover {
+              background-color: #5f4129;
+            }
+          }
+        }
+        .calendar {
+          width: 100%;
+          th,
+          td {
+            text-align: center;
+            padding: 10px 10px;
+            border-bottom: 1px solid #f3f3f3;
+            border-right: 1px solid #f3f3f3;
+          }
+          th {
+            color: #6f4e37;
+            border-top: none;
+          }
+          td {
+            padding: 8px 3px 28px 19px;
+          }
+          .day,
+          .faded-day:hover {
+            color: #d4bba8;
+          }
+          .day {
+            color: inherit;
+            transition: color 0.3s;
+            cursor: pointer;
+          }
+          .today {
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            text-align: center;
+            padding: 7px;
+            font-weight: 400;
+            display: inline-block;
+            background-color: #6f4e37;
+            color: #fff;
+          }
+          .faded-day {
+            color: #d7d7d7;
+          }
+          .border-right-none {
+            border-right: none !important;
+          }
         }
         .float-left {
           float: left;
@@ -399,6 +500,44 @@
         }
       }
     }
+    .banner {
+      background-color: #6f4e37;
+      justify-content: flex-end;
+      text-align: left;
+      height: 100%;
+      padding-top: 173px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #7e5b43;
+      }
+      .brand-app {
+        font-size: 74%;
+        padding-right: 1.25em;
+        padding-left: 1.25em;
+        padding: 0.55em 0.75em 0.6em;
+        color: #fff;
+        font-weight: 500;
+        width: 80px;
+        border-radius: 12px;
+        background-color: #856b59;
+        opacity: 0.5;
+        text-align: center;
+        margin-bottom: 1rem !important;
+      }
+      .banner-main-text {
+        margin: 10px 0;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 1rem !important;
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      .small-white-text {
+        color: #fff;
+        margin-bottom: 1rem !important;
+      }
+    }
   }
 }
 .dark-grey {
@@ -436,15 +575,8 @@
   }
   .time-ticket-created {
     color: #909090 !important;
-    font-size: 15px;
-    line-height: 0.9rem;
   }
 }
 li {
   list-style-type: none;
-}
-@media screen and (max-width: 1019px) {
-  #main-dashboard {
-    margin-left: 100px;
-  }
 }

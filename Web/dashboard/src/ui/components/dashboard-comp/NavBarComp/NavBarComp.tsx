@@ -13,21 +13,9 @@ import { faThLarge } from '@fortawesome/free-solid-svg-icons';
 import { MDBIcon} from 'mdbreact';
 // import SimpleLineIcon from 'react-simple-line-icons';
 export const NavBarComp = () => {
-const [state, setState] = React.useState({
-    checkedA: true,
-    checkedB: true,
-  });
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
-};
-const [visible, setVisible] = useState(false);
 
-const Click = () =>{
-    setVisible(!visible);
-    console.log("asasdas");
-    
-}
+
     
     return (
         <>
@@ -41,7 +29,7 @@ const Click = () =>{
                         <Grid item xl={4} style={{'textAlign':'center'}}> 
                             <ul className="left-navbar">
                                 <li>
-                                    <button><FontAwesomeIcon icon={faBars} onClick={()=>Click()} /></button>
+                                    <button><FontAwesomeIcon icon={faBars} /></button>
                                 </li>
                                 <li>
                                     <input type="text" placeholder="Search"/>
