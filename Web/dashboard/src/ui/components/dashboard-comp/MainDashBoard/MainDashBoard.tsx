@@ -767,7 +767,7 @@ const Row7 = () => {
                 <Grid container
                         direction="row"
                          spacing={2}>
-                              <Grid item lg={4}  xl={4} spacing={2}>
+                              <Grid item lg={12} md={6}  xl={4} spacing={2}>
                                    <div className="card notification-card">
                                     <div className="card-body justify-content-align">
                                         <div className="inline-block-flt-left ">
@@ -839,12 +839,10 @@ const Row7 = () => {
                                     </div>
                                 </div>
                             </Grid>
-                               <Grid item lg={4}  xl={4}>
-                                 <div className="card relative-card h-100">
-                                     <div className="air-ballon-img">
-                                         <img src={AirBallon} alt=""/>
-                                     </div>
-                                    <div className="card-body ">
+                               <Grid item lg={6} md={6}  xl={4} sm={12}>
+                                 <div className="card relative-card advanced-search-card">
+                                    <div className="card-body advanced-search-body">
+                                        <div className="advanced-search-title">Advanced Search</div>
                                        <form className="advanced-search-form">
                                         <div className="form-group">
                                             <label htmlFor="toppings">Toppings</label>
@@ -882,7 +880,7 @@ const Row7 = () => {
                                     </div>
                                 </div>
                             </Grid>
-                             <Grid item lg={4}  xl={4}>
+                             <Grid item lg={6}  xl={4}>
                                  <div className="card ">
                                     <div className="card-body">
                                         
