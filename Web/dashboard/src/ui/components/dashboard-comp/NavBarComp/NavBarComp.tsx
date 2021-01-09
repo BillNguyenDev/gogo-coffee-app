@@ -13,10 +13,6 @@ import { faThLarge } from '@fortawesome/free-solid-svg-icons';
 import { MDBIcon} from 'mdbreact';
 // import SimpleLineIcon from 'react-simple-line-icons';
 export const NavBarComp = () => {
-
-
-
-    
     return (
         <>
                 <nav id="top-menu" className="grid-full">

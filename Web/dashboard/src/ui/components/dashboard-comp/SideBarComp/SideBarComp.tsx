@@ -10,115 +10,115 @@ export const SideBarComp = () => {
         <section id="vertical-sidebar">
             <div className="main-vertical-menu border-radius-toggle">
                 <ul className="main-ul">
-                    <li className="active"><a>Dashboard</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>Applications</a></li>
-                    <li><a>UI</a></li>
-                    <li><a>Menu</a></li>
-                    <li><a style={{borderBottom:"none"}}>About</a></li>
+                    <li className="active">Dashboard</li>
+                    <li>Pages</li>
+                    <li>Applications</li>
+                    <li>UI</li>
+                    <li>Menu</li>
+                    <li style={{borderBottom:"none"}}>About</li>
                 </ul>
             </div>
             <div className="sub-vertical-menu display-none display-show">
                 {/* <ul className="sub-ul">
-                    <li><a>Default</a></li>
-                    <li><a>Analytics</a></li>
-                    <li><a>Ecommerce</a></li>
-                    <li><a>Content</a></li>
+                    <li>Default</li>
+                    <li>Analytics</li>
+                    <li>Ecommerce</li>
+                    <li>Content</li>
                 </ul> */}
 
 
                  {/* <ul className="sub-ul">
-                    <li><a>To-do List</a></li>
-                    <li><a>Survey</a></li>
-                    <li><a>Chat</a></li>
+                    <li>To-do List</li>
+                    <li>Survey</li>
+                    <li>Chat</li>
                 </ul> */}
 
 
                  {/* <ul className="sub-ul page-ul">
-                    <li><a >Authorization</a>
+                    <li><a >Authorization
                         <div className="ul-child-dropdown">
                             <ul className="ul-child">
-                                <li><a>Login</a></li>
-                                <li><a>Register</a></li>
-                                <li><a>Forgot Password</a></li>
-                                <li><a>Reset Password</a></li>
+                                <li>Login</li>
+                                <li>Register</li>
+                                <li>Forgot Password</li>
+                                <li>Reset Password</li>
                             </ul>
                         </div>
                     </li>
-                    <li><a>Product</a>
+                    <li>Product
                         <div className="ul-child-dropdown">
                             <ul className="ul-child">
-                                <li><a>Data List</a></li>
-                                <li><a>Thumb List</a></li>
-                                <li><a>Image List</a></li>
-                                <li><a>Details</a></li>
-                                <li><a>Details Alt</a></li>
+                                <li>Data List</li>
+                                <li>Thumb List</li>
+                                <li>Image List</li>
+                                <li>Details</li>
+                                <li>Details Alt</li>
                             </ul>
                         </div>
                     </li>
-                    <li><a>Profile</a>
+                    <li>Profile
                         <div className="ul-child-dropdown">
                             <ul className="ul-child">
-                                <li><a>Social</a></li>
-                                <li><a>Portfolio</a></li>
+                                <li>Social</li>
+                                <li>Portfolio</li>
                             </ul>
                         </div>
                     </li>
-                    <li><a>Blog</a>
+                    <li>Blog
                         <div className="ul-child-dropdown">
                             <ul className="ul-child">
-                                <li><a>Blog List</a></li>
-                                <li><a>Blog Detail</a></li>
+                                <li>Blog List</li>
+                                <li>Blog Detail</li>
                             </ul>
                         </div>
                     </li>
-                    <li><a>Miscellaneous</a>
+                    <li>Miscellaneous
                         <div className="ul-child-dropdown">
                             <ul className="ul-child">
-                                <li><a>Faq</a></li>
-                                <li><a>Knowledege Base</a></li>
-                                <li><a>Prices</a></li>
-                                <li><a>Search</a></li>
-                                <li><a>Mailing</a></li>
-                                <li><a>Invoice</a></li>
-                                <li><a>Error</a></li>
+                                <li>Faq</li>
+                                <li>Knowledege Base</li>
+                                <li>Prices</li>
+                                <li>Search</li>
+                                <li>Mailing</li>
+                                <li>Invoice</li>
+                                <li>Error</li>
                             </ul>
                         </div>
                     </li>
                 </ul> */}
                 
                  <ul className="sub-ul ul-toggle">
-                    <li><a>Forms</a>
+                    <li>Forms
                         <div className="ul-child-dropdown">
                             <ul className="ul-child">
-                                <li><a>Layouts</a></li>
-                                <li><a>Components</a></li>
-                                <li><a>Validations</a></li>
-                                <li><a>Wizard</a></li>
+                                <li>Layouts</li>
+                                <li>Components</li>
+                                <li>Validations</li>
+                                <li>Wizard</li>
                             </ul>
                         </div>
                     </li>
-                    <li><a>Components</a>
+                    <li>Components
                         <div className="ul-child-dropdown">
                             <ul className="ul-child">
-                                <li><a>Alerts</a></li>
-                                <li><a>Badges</a></li>
-                                <li><a>Buttons</a></li>
-                                <li><a>Cards</a></li>
-                                <li><a>Carousel</a></li>
-                                <li><a>Charts</a></li>
-                                <li><a>Collapse</a></li>
-                                <li><a>Dropdowns</a></li>
-                                <li><a>Editors</a></li>
-                                <li><a>Icons</a></li>
-                                <li><a>Input Groups</a></li>
-                                <li><a>Jumbotron</a></li>
-                                <li><a>Maps</a></li>
-                                <li><a>Modal</a></li>
-                                <li><a>Navigation</a></li>
-                                <li><a>Popover & Tooltip</a></li>
-                                <li><a>Sortable</a></li>
-                                <li><a>Tables</a></li>
+                                <li>Alerts</li>
+                                <li>Badges</li>
+                                <li>Buttons</li>
+                                <li>Cards</li>
+                                <li>Carousel</li>
+                                <li>Charts</li>
+                                <li>Collapse</li>
+                                <li>Dropdowns</li>
+                                <li>Editors</li>
+                                <li>Icons</li>
+                                <li>Input Groups</li>
+                                <li>Jumbotron</li>
+                                <li>Maps</li>
+                                <li>Modal</li>
+                                <li>Navigation</li>
+                                <li>Popover & Tooltip</li>
+                                <li>Sortable</li>
+                                <li>Tables</li>
                             </ul>
                         </div>
                     </li>

@@ -1,8 +1,9 @@
 import React from 'react'
 import './MainDashBoard.scss';
 import Grid from '@material-ui/core/Grid';
+import { FormControl,InputLabel,Input,FormHelperText  } from '@material-ui/core';
 import { MDBIcon} from 'mdbreact';
-
+import AirBallon from '../../../../img/advanced-box.jpg';
 const MainTitle = () => {
     return (
         <>
@@ -23,10 +24,10 @@ const MainTitle = () => {
 const Row1 = () => {
     return (
         <>
-        <div className="row">
+        <div className="mg-top">
         <Grid  container
                 direction="row"
-                justify="space-between"
+                
                 spacing={2}>
                 <Grid item xl={6} lg={6} md={12} sm={12}>
                  
@@ -81,11 +82,11 @@ const Row1 = () => {
 const Row2 = () => {
     return (
         <>
-        <div className="row">
+        <div className="mg-top">
                 <Grid container
                         direction="row"
-                        justify="space-between"
-                        alignItems="center" spacing={2}>
+                        
+                         spacing={2}>
                 <Grid item xl={4} lg={4} md={12} sm={12}>
                     <div className="card">
                         <div className="card-body">
@@ -232,12 +233,12 @@ const Row2 = () => {
 const Row3 = () => {
     return(
         <>
-        <div className="row">
+        <div className="mg-top">
             <Grid container
                     direction="row"
-                    justify="space-between"
-                    alignItems="center" spacing={2}>
-                    <Grid item xl={6} lg={6} md={12} sm={12}>
+                    
+                     spacing={2}>
+                    <Grid item xl={6} lg={6} md={6} sm={12}>
                         <div className="card">
                             <div className="card-body">
                                 <div className="card-title">Calendar</div>
@@ -422,7 +423,7 @@ const Row3 = () => {
                             </div>
                         </div>
                     </Grid>
-                    <Grid item xl={6} lg={6} md={12} sm={12}>
+                    <Grid item xl={6} lg={6} md={6} sm={12}>
                         <div className="h-100 card">
                             <div className="card-body">
                                 <div className="card-title">Best Sellers</div>
@@ -503,11 +504,11 @@ const Row3 = () => {
 const Row4 = () => {
     return (
         <>
-        <div className="row">
+        <div className="mg-top">
           <Grid container
             direction="row"
-            justify="space-between"
-            alignItems="center" spacing={2}>
+            
+             spacing={2}>
                 <Grid item lg={4} sm={12}>
                     <div className="card">
                         <div className="card-body">
@@ -515,7 +516,7 @@ const Row4 = () => {
                             <ul className="status-list">
                                 <li>
                                     <div className="status-name">
-                                        <p>
+                                    <p>
                                             Basic Information
                                         </p>
                                         <span className="float-right-text">
@@ -637,36 +638,72 @@ const Row4 = () => {
 const Row5 = () => {
     return (
         <>
-            <div className="row">
+            <div className="mg-top">
                 <Grid container
                         direction="row"
-                        justify="center"
-                        alignItems="center" spacing={2}>
+                        
+                         spacing={2}>
                             <Grid item lg={3} xl={3} md={6} sm={12}>
                                 <div className="card ">
-                                    <div className="card-body">
-                                        <div className="card-title">Payment Status</div>
+                                    <div className="card-body justify-content-align">
+                                        <div className="inline-block-flt-left">
+                                            Payment Status
+                                        </div>
+                                        <div className="inline-block-flt-left">
+                                            <div className="circle-border" style={{background:"linear-gradient(273deg, rgb(111, 78, 55) 50%, transparent 50%), linear-gradient(-45deg, rgb(111, 78, 55) 50%, lightgray 50%)"}}>
+                                                <div className="circle">
+                                                    <p className="percentage-status">64%</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </Grid>
                              <Grid item lg={3} xl={3} md={6} sm={12}>
-                                 <div className="card justify-content-center">
-                                    <div className="card-body">
-                                        <div className="card-title">Payment Done</div>
+                                 <div className="card ">
+                                    <div className="card-body justify-content-align">
+                                        <div className="inline-block-flt-left">
+                                            Payment Done
+                                        </div>
+                                        <div className="inline-block-flt-left">
+                                            <div className="circle-border" style={{background:"linear-gradient(270deg, rgb(111, 78, 55) 50%, transparent 50%), linear-gradient(18deg, rgb(111, 78, 55) 50%, lightgray 50%)"}}>
+                                                <div className="circle">
+                                                    <p className="percentage-status">75%</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </Grid>
                              <Grid item lg={3} xl={3} md={6} sm={12}>
-                                 <div className="card justify-content-center">
-                                    <div className="card-body">
-                                        <div className="card-title">Tasks Done</div>
+                                 <div className="card ">
+                                    <div className="card-body justify-content-align">
+                                        <div className="inline-block-flt-left ">
+                                            Tasks Done
+                                        </div>
+                                        <div className="inline-block-flt-left">
+                                            <div className="circle-border" style={{background:"linear-gradient(299deg, rgb(111, 78, 55) 50%, transparent 50%), linear-gradient(-88deg, rgb(111, 78, 55) 50%, lightgray 50%), linear-gradient(-88deg, lightgray 50%,transparent 50%)"}}>
+                                                <div className="circle">
+                                                    <p className="percentage-status">32%</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </Grid>
                              <Grid item lg={3} xl={3} md={6} sm={12}>
-                                 <div className="card justify-content-center">
-                                    <div className="card-body">
-                                        <div className="card-title">Work Progress</div>
+                                 <div className="card ">
+                                    <div className="card-body justify-content-align">
+                                        <div className="inline-block-flt-left ">
+                                            Work Progress
+                                        </div>
+                                        <div className="inline-block-flt-left">
+                                            <div className="circle-border" style={{background:"linear-gradient(270deg, rgb(111, 78, 55) 50%, transparent 50%), linear-gradient(18deg, rgb(111, 78, 55) 50%, lightgray 50%)"}}>
+                                                <div className="circle">
+                                                    <p className="percentage-status">45%</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </Grid>
@@ -678,11 +715,11 @@ const Row5 = () => {
 const Row6 = () => {
     return (
         <>
-            <div className="row">
+            <div className="mg-top">
           <Grid container
             direction="row"
-            justify="space-between"
-            alignItems="center" spacing={2}>
+            
+             spacing={2}>
                 <Grid item lg={6} sm={12}>
                     <div className="card">
                         <div className="card-body">
@@ -722,6 +759,142 @@ const Row6 = () => {
         </>
     )
 }
+
+const Row7 = () => {
+    return (
+        <>
+            <div className="mg-top">
+                <Grid container
+                        direction="row"
+                         spacing={2}>
+                              <Grid item lg={4}  xl={4} spacing={2}>
+                                   <div className="card notification-card">
+                                    <div className="card-body justify-content-align">
+                                        <div className="inline-block-flt-left ">
+                                            <div className="large-white-text">5 Files</div>
+                                            <div className="small-white-text">Pending for print</div>
+                                        </div>
+                                        <div className="inline-block-flt-left">
+                                            <div className="circle-wrap">
+                                                <div className="circle">
+                                                    <div className="mask full">
+                                                        <div className="fill"></div>
+                                                    </div>
+                                                    <div className="mask half">
+                                                        <div className="fill"></div>
+                                                    </div>
+                                                    <div className="inside-circle">
+                                                        5/12
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                   <div className="card notification-card">
+                                    <div className="card-body justify-content-align">
+                                        <div className="inline-block-flt-left ">
+                                            <div className="large-white-text">4 Orders</div>
+                                            <div className="small-white-text">On approval process</div>
+                                        </div>
+                                        <div className="inline-block-flt-left">
+                                           <div className="circle-wrap">
+                                                <div className="circle">
+                                                    <div className="mask full">
+                                                        <div className="fill"></div>
+                                                    </div>
+                                                    <div className="mask half">
+                                                        <div className="fill"></div>
+                                                    </div>
+                                                    <div className="inside-circle">
+                                                       4/6
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                  <div className="card notification-card">
+                                    <div className="card-body justify-content-align">
+                                        <div className="inline-block-flt-left ">
+                                            <div className="large-white-text">8 Alerts</div>
+                                            <div className="small-white-text">Waiting for notice</div>
+                                        </div>
+                                        <div className="inline-block-flt-left">
+                                            <div className="circle-wrap">
+                                                <div className="circle">
+                                                    <div className="mask full">
+                                                        <div className="fill"></div>
+                                                    </div>
+                                                    <div className="mask half">
+                                                        <div className="fill"></div>
+                                                    </div>
+                                                    <div className="inside-circle">
+                                                        8/10
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Grid>
+                               <Grid item lg={4}  xl={4}>
+                                 <div className="card relative-card h-100">
+                                     <div className="air-ballon-img">
+                                         <img src={AirBallon} alt=""/>
+                                     </div>
+                                    <div className="card-body ">
+                                       <form className="advanced-search-form">
+                                        <div className="form-group">
+                                            <label htmlFor="toppings">Toppings</label>
+                                            <input type="toppings" className="input-form"  id="toppings" aria-describedby="toppings" placeholder="Select..."/>
+                                            <div className="dropdown-list">
+                                                <div className="dropdown-item">Chocolate</div>
+                                                <div className="dropdown-item">Vanila</div>
+                                                <div className="dropdown-item">Strawberry</div>
+                                                <div className="dropdown-item">Caramel</div>
+                                                <div className="dropdown-item">Cookies and Cream</div>
+                                                <div className="dropdown-item">Peppermint</div>
+                                            </div>
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="type">Type</label>
+                                            <input type="type" className="input-form" id="type" placeholder="Select..."/>
+                                            <div className="dropdown-list">
+                                                <div className="dropdown-item">Cake</div>
+                                                <div className="dropdown-item">Cupcake</div>
+                                                <div className="dropdown-item">Dessert</div>
+                                            </div>
+                                        </div>
+                                        <div className="form-check">
+                                            <label htmlFor="keyword">Keyword</label>
+                                            <input type="keyword" className="input-form" id="keyword" placeholder="Keyword"/>
+                                        </div>
+                                         <div className="form-check custom-control">
+                                            <input type="checkbox"  id="checkbox-input"/>
+                                            <label className="form-check-label" htmlFor="checkbox">Check this custom checkbox</label>
+                                        </div>
+                                        <div className="btn-submit">
+                                            <button type="submit" className="btn btn-primary">Seach</button>
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </Grid>
+                             <Grid item lg={4}  xl={4}>
+                                 <div className="card ">
+                                    <div className="card-body">
+                                        
+                                    </div>
+                                </div>
+                            </Grid>
+                </Grid>
+            </div>
+        
+        </>
+    )
+}
 const MainContent = () => {
     return (
         <>  
@@ -731,6 +904,7 @@ const MainContent = () => {
             <Row4/>
             <Row5/>
             <Row6/>
+            <Row7/>
         </>
     )
 }

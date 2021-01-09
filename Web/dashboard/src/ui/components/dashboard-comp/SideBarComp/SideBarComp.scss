@@ -5,10 +5,10 @@
   margin-top: 20px;
   z-index: 4;
   height: 100%;
-  transition: border-radius 0.3s;
+  transition: all 0.3s;
   .main-vertical-menu {
     width: 120px;
-    height: calc(100% - 90px);
+    height: calc(100% - 100px);
     background: #fff;
     z-index: 3;
     position: fixed;
@@ -135,4 +135,9 @@
   // .display-show {
   //   transform: translateX(0px);
   // }
+}
+@media (max-width: 767px) {
+  #vertical-sidebar {
+    transform: translateX(-350px);
+  }
 }
