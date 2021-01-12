@@ -5,7 +5,7 @@
     width: 100%;
     float: left;
   }
-  .container {
+  .wrapper {
     max-width: 100%;
     margin: 0 auto;
   }
@@ -31,7 +31,7 @@
     }
   }
   .mg-top {
-    margin-top: 30px;
+    margin-top: 20px;
     .h-100 {
       height: 100% !important;
     }
@@ -84,8 +84,8 @@
     }
     .notification-card {
       background-color: #6f4e37 !important;
-      margin-bottom: 1rem;
       border-radius: 0.75rem;
+      height: 100%;
       .space-between {
         justify-content: space-between;
         display: flex;
@@ -110,7 +110,7 @@
     //   position: relative;
     // }
     .advanced-search-card {
-      height: 650px;
+      height: 650px !important;
       background: url(../../../../img/chocolate-coconut-frappe.jpg);
       background-size: contain;
       background-repeat: no-repeat;
@@ -128,6 +128,8 @@
       .form-group,
       .form-check {
         margin: 18px 0;
+        position: relative;
+
         .input-form {
           width: 100%;
           margin-top: 10px;
@@ -142,7 +144,6 @@
           flex-wrap: wrap;
           justify-content: center;
           min-height: 38px;
-          position: relative;
           transition: all 100ms ease 0s;
           box-sizing: border-box;
           outline: 0px !important;
@@ -156,12 +157,12 @@
           position: absolute;
           background-color: #fff;
           z-index: 200;
-          top: 100px;
-          left: 30px;
+          top: 79px;
+          left: 0;
           right: 0;
           border-top: none;
           height: auto;
-          width: 77%;
+          width: 100%;
           border-left: 1px solid#6f4e37;
           border-right: 1px solid#6f4e37;
           border-bottom: 1px solid#6f4e37;
@@ -183,10 +184,15 @@
         position: relative;
         display: block;
       }
-      .form-check {
+      div.form-check {
+        padding-left: 0;
         #checkbox-input {
           margin-right: 10px;
           transform: scale(1.2);
+        }
+        .form-check-label {
+          display: inline;
+          font-size: 13px;
         }
       }
       .btn-submit {
@@ -217,6 +223,9 @@
         }
       }
     }
+    .mg-bottom {
+      margin-bottom: 1rem;
+    }
     .card {
       width: 100%;
       min-width: 0;
@@ -224,7 +233,9 @@
       flex-direction: column;
       background-color: #ffffff;
       border-radius: 0.75rem;
-      box-shadow: 9px 30px 44px rgba(65, 64, 64, 0.04);
+      box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04) !important;
+      border: initial;
+      height: 100%;
       .advanced-search-body {
         padding: 80px 30px 30px !important;
         .advanced-search-title {
@@ -329,7 +340,6 @@
             width: 28px;
             height: 28px;
             text-align: center;
-            padding: 7px;
             font-weight: 400;
             display: inline-block;
             background-color: #6f4e37;
@@ -549,7 +559,6 @@
         .dashboard-logs,
         .tickets-list,
         .status-list {
-          height: 270px;
           width: 100%;
           overflow: hidden;
           transition: all 0.3s ease-in-out;
@@ -751,7 +760,7 @@
       justify-content: flex-end;
       text-align: left;
       height: 100%;
-      padding-top: 173px;
+      padding-top: 256px;
       cursor: pointer;
       transition: background-color 0.3s;
       &:hover {

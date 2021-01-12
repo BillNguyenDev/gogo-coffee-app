@@ -1,7 +1,7 @@
 #top-menu {
   background-color: #fff;
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
-  padding: 20px 20px;
+  padding: 15px 20px;
   z-index: 1030;
   position: fixed;
   width: 100%;
@@ -27,6 +27,7 @@
     float: left;
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
     li {
       display: inline;
     }
@@ -407,7 +408,15 @@
     padding-left: 10px;
   }
 }
-
+.nowrap {
+  flex-wrap: nowrap !important;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.align-items-center {
+  align-items: center;
+}
 .MuiFilledInput-underline:before {
   content: "";
   width: 0 !important;

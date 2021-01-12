@@ -25,14 +25,11 @@ const Row1 = () => {
     return (
         <>
         <div className="mg-top">
-        <Grid  container
-                direction="row"
-                
-                spacing={2}>
-                <Grid item xl={6} lg={6} md={12} sm={12}>
+            <div className="row">
+                <div className="col-lg-12 col-xl-6 mg-top">
                  
-                </Grid>
-                <Grid item xl={6} lg={6}  md={12} sm={12}>
+                </div>
+                <div className="col-lg-12 col-xl-6 mg-top">
                    <div className="card">
                        <div className="card-body">
                        <div className="card-title">Recent Orders</div>
@@ -73,8 +70,8 @@ const Row1 = () => {
                        </ul>
                        </div>
                    </div>
-                </Grid>
-            </Grid>
+                </div>
+            </div>
         </div>
         </>
     )
@@ -83,149 +80,146 @@ const Row2 = () => {
     return (
         <>
         <div className="mg-top">
-                <Grid container
-                        direction="row"
-                        
-                         spacing={2}>
-                <Grid item xl={4} lg={4} md={12} sm={12}>
-                    <div className="card">
-                        <div className="card-body">
-                            <div className="card-title">Product Categories</div>
+                    <div className="row">
+                        <div className="col-md-12 col-lg-4 mg-top">
+                            <div className="card">
+                                <div className="card-body">
+                                    <div className="card-title">Product Categories</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </Grid>
-                <Grid item xl={4} lg={4} md={12} sm={12}>
-                    <div className="card">
-                        <div className="card-body">
-                            <div className="card-title">Logs</div>
-                            <div className="dashboard-logs">
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <span className="log-id align-middle new-user-registration"></span>
-                                                </td>
-                                                <td>New user registration</td>
-                                                <td className="text-right" >
-                                                    <span className="time-log">14:12</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span className="log-id align-middle new-sale"></span>
-                                                </td>
-                                                <td>New sale: Soufflé</td>
-                                                <td className="text-right">
-                                                    <span className="time-log">14:12</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span className="log-id align-middle added"></span>
-                                                </td>
-                                                <td>14 products added</td>
-                                                <td className="text-right">
-                                                    <span className="time-log">14:12</span>
-                                                </td>
-                                            </tr>
-                                             <tr>
-                                                <td>
-                                                    <span className="log-id align-middle new-sale"></span>
-                                                </td>
-                                                <td>New sale: Napoleonshat</td>
-                                                <td className="text-right">
-                                                    <span className="time-log">12:44</span>
-                                                </td>
-                                            </tr>
-                                             <tr>
-                                                <td>
-                                                    <span className="log-id align-middle new-sale"></span>
-                                                </td>
-                                                <td>New sale: Cremeschnitte</td>
-                                                <td className="text-right">
-                                                    <span className="time-log">12:30</span>
-                                                </td>
-                                            </tr>
-                                             <tr>
-                                                <td>
-                                                    <span className="log-id align-middle new-sale"></span>
-                                                </td>
-                                                <td>New sale: Soufflé</td>
-                                                <td className="text-right">
-                                                    <span className="time-log">10:40</span>
-                                                </td>
-                                            </tr>
-                                             <tr>
-                                                <td>
-                                                    <span className="log-id align-middle added"></span>
-                                                </td>
-                                                <td>2 categories added</td>
-                                                <td className="text-right">
-                                                    <span className="time-log">10:20</span>
-                                                </td>
-                                            </tr>
-                                             <tr>
-                                                <td>
-                                                    <span className="log-id align-middle new-sale"></span>
-                                                </td>
-                                                <td>New sale: Chocolate Cake</td>
-                                                <td className="text-right">
-                                                    <span className="time-log">09:28</span>
-                                                </td>
-                                            </tr>
-                                             <tr>
-                                                <td>
-                                                    <span className="log-id align-middle new-sale"></span>
-                                                </td>
-                                                <td>New sale: Magdalena</td>
-                                                <td className="text-right">
-                                                    <span className="time-log">09:25</span>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                        <div className="col-md-6 col-lg-4 mg-top">
+                            <div className="card">
+                                <div className="card-body">
+                                    <div className="card-title">Logs</div>
+                                    <div className="dashboard-logs">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span className="log-id align-middle new-user-registration"></span>
+                                                        </td>
+                                                        <td>New user registration</td>
+                                                        <td className="text-right" >
+                                                            <span className="time-log">14:12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span className="log-id align-middle new-sale"></span>
+                                                        </td>
+                                                        <td>New sale: Soufflé</td>
+                                                        <td className="text-right">
+                                                            <span className="time-log">14:12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span className="log-id align-middle added"></span>
+                                                        </td>
+                                                        <td>14 products added</td>
+                                                        <td className="text-right">
+                                                            <span className="time-log">14:12</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span className="log-id align-middle new-sale"></span>
+                                                        </td>
+                                                        <td>New sale: Napoleonshat</td>
+                                                        <td className="text-right">
+                                                            <span className="time-log">12:44</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span className="log-id align-middle new-sale"></span>
+                                                        </td>
+                                                        <td>New sale: Cremeschnitte</td>
+                                                        <td className="text-right">
+                                                            <span className="time-log">12:30</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span className="log-id align-middle new-sale"></span>
+                                                        </td>
+                                                        <td>New sale: Soufflé</td>
+                                                        <td className="text-right">
+                                                            <span className="time-log">10:40</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span className="log-id align-middle added"></span>
+                                                        </td>
+                                                        <td>2 categories added</td>
+                                                        <td className="text-right">
+                                                            <span className="time-log">10:20</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span className="log-id align-middle new-sale"></span>
+                                                        </td>
+                                                        <td>New sale: Chocolate Cake</td>
+                                                        <td className="text-right">
+                                                            <span className="time-log">09:28</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span className="log-id align-middle new-sale"></span>
+                                                        </td>
+                                                        <td>New sale: Magdalena</td>
+                                                        <td className="text-right">
+                                                            <span className="time-log">09:25</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 mg-top">
+                            <div className="card card-width">
+                                <div className="card-body">
+                                    <div className="card-title">Tickets</div>
+                                        <ul className="tickets-list">
+                                            <li>
+                                                <img className="ticket-creator-img" src="https://gogo-react.coloredstrategies.com/assets/img/profiles/l-1.jpg" alt=""/>
+                                                <div className="ticket-creator">
+                                                    <span className="creator-name">Nguyen Hoan Bao</span>
+                                                    <span className="time-ticket-created">09.08.2018 - 12:45</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img className="ticket-creator-img" src="https://gogo-react.coloredstrategies.com/assets/img/profiles/l-1.jpg" alt=""/>
+                                                <div className="ticket-creator">
+                                                    <span className="creator-name">Nguyen Hoan Bao</span>
+                                                    <span className="time-ticket-created">09.08.2018 - 12:45</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img className="ticket-creator-img" src="https://gogo-react.coloredstrategies.com/assets/img/profiles/l-1.jpg" alt=""/>
+                                                <div className="ticket-creator">
+                                                    <span className="creator-name">Nguyen Hoan Bao</span>
+                                                    <span className="time-ticket-created">09.08.2018 - 12:45</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <img className="ticket-creator-img" src="https://gogo-react.coloredstrategies.com/assets/img/profiles/l-1.jpg" alt=""/>
+                                                <div className="ticket-creator">
+                                                    <span className="creator-name">Nguyen Hoan Bao</span>
+                                                    <span className="time-ticket-created">09.08.2018 - 12:45</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </Grid>
-                <Grid item xl={4} lg={4} md={12} sm={12}>
-                    <div className="card card-width">
-                        <div className="card-body">
-                            <div className="card-title">Tickets</div>
-                                <ul className="tickets-list">
-                                    <li>
-                                        <img className="ticket-creator-img" src="https://gogo-react.coloredstrategies.com/assets/img/profiles/l-1.jpg" alt=""/>
-                                        <div className="ticket-creator">
-                                            <span className="creator-name">Nguyen Hoan Bao</span>
-                                            <span className="time-ticket-created">09.08.2018 - 12:45</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                         <img className="ticket-creator-img" src="https://gogo-react.coloredstrategies.com/assets/img/profiles/l-1.jpg" alt=""/>
-                                        <div className="ticket-creator">
-                                            <span className="creator-name">Nguyen Hoan Bao</span>
-                                            <span className="time-ticket-created">09.08.2018 - 12:45</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                         <img className="ticket-creator-img" src="https://gogo-react.coloredstrategies.com/assets/img/profiles/l-1.jpg" alt=""/>
-                                        <div className="ticket-creator">
-                                            <span className="creator-name">Nguyen Hoan Bao</span>
-                                            <span className="time-ticket-created">09.08.2018 - 12:45</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                         <img className="ticket-creator-img" src="https://gogo-react.coloredstrategies.com/assets/img/profiles/l-1.jpg" alt=""/>
-                                        <div className="ticket-creator">
-                                            <span className="creator-name">Nguyen Hoan Bao</span>
-                                            <span className="time-ticket-created">09.08.2018 - 12:45</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                        </div>
-                    </div>
-                </Grid>
-            </Grid>
         </div>
         </>
     )
@@ -234,11 +228,8 @@ const Row3 = () => {
     return(
         <>
         <div className="mg-top">
-            <Grid container
-                    direction="row"
-                    
-                     spacing={2}>
-                    <Grid item xl={6} lg={6} md={6} sm={12}>
+                <div className="row">
+                    <div className="col-lg-12 col-xl-6 mg-top">
                         <div className="card">
                             <div className="card-body">
                                 <div className="card-title">Calendar</div>
@@ -422,8 +413,8 @@ const Row3 = () => {
 
                             </div>
                         </div>
-                    </Grid>
-                    <Grid item xl={6} lg={6} md={6} sm={12}>
+                    </div>
+                    <div className="col-lg-12 col-xl-6 mg-top">
                         <div className="h-100 card">
                             <div className="card-body">
                                 <div className="card-title">Best Sellers</div>
@@ -494,9 +485,8 @@ const Row3 = () => {
                                 </div>
                             </div>
                         </div>
-                    </Grid>
-            </Grid>
-
+                    </div>
+                </div>
         </div>
         </>
     )   
@@ -505,11 +495,8 @@ const Row4 = () => {
     return (
         <>
         <div className="mg-top">
-          <Grid container
-            direction="row"
-            
-             spacing={2}>
-                <Grid item lg={4} sm={12}>
+              <div className="row">
+                <div className="col-lg-4 col-sm-12 mg-top">
                     <div className="card">
                         <div className="card-body">
                             <div className="card-title">Profile Status</div>
@@ -582,8 +569,8 @@ const Row4 = () => {
                             </ul>
                         </div>
                     </div>
-                </Grid>
-                <Grid item lg={4} md={6} sm={12}>
+                </div>
+                <div className="col-lg-4 col-md-6 mg-top">
                     <div className="card banner">
                         <div className="card-body">
                             <span className="brand-app">
@@ -595,8 +582,8 @@ const Row4 = () => {
                             <p className="small-white-text">Yes,it is indeed</p>
                         </div>
                     </div>
-                </Grid>
-                <Grid item lg={4} md={6} sm={12}>
+                </div>
+                <div className="col-lg-4 col-md-6 mg-top">
                      <div className="card">
                         <div className="card-body">
                             <div className="card-title">Cakes</div>
@@ -628,8 +615,9 @@ const Row4 = () => {
                             </ul>
                         </div>
                     </div>
-                </Grid>
-            </Grid>
+                </div>
+
+              </div>
         </div>
         </>
     )
@@ -639,11 +627,8 @@ const Row5 = () => {
     return (
         <>
             <div className="mg-top">
-                <Grid container
-                        direction="row"
-                        
-                         spacing={2}>
-                            <Grid item lg={3} xl={3} md={6} sm={12}>
+                    <div className="row">
+                            <div className="col-lg-6 col-xl-3 mg-top">
                                 <div className="card ">
                                     <div className="card-body justify-content-align">
                                         <div className="inline-block-flt-left">
@@ -658,8 +643,8 @@ const Row5 = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </Grid>
-                             <Grid item lg={3} xl={3} md={6} sm={12}>
+                            </div>
+                             <div className="col-lg-6 col-xl-3 mg-top">
                                  <div className="card ">
                                     <div className="card-body justify-content-align">
                                         <div className="inline-block-flt-left">
@@ -674,8 +659,8 @@ const Row5 = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </Grid>
-                             <Grid item lg={3} xl={3} md={6} sm={12}>
+                            </div>
+                             <div className="col-lg-6 col-xl-3 mg-top">
                                  <div className="card ">
                                     <div className="card-body justify-content-align">
                                         <div className="inline-block-flt-left ">
@@ -690,8 +675,8 @@ const Row5 = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </Grid>
-                             <Grid item lg={3} xl={3} md={6} sm={12}>
+                            </div>
+                             <div className="col-lg-6 col-xl-3 mg-top">
                                  <div className="card ">
                                     <div className="card-body justify-content-align">
                                         <div className="inline-block-flt-left ">
@@ -706,8 +691,8 @@ const Row5 = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </Grid>
-                </Grid>
+                            </div>
+                    </div>
             </div>
         </>
     )
@@ -716,11 +701,8 @@ const Row6 = () => {
     return (
         <>
             <div className="mg-top">
-          <Grid container
-            direction="row"
-            
-             spacing={2}>
-                <Grid item lg={6} sm={12}>
+              <div className="row">
+                <div className="col-md-6 col-sm-12 mg-top">
                     <div className="card">
                         <div className="card-body">
                             <div className="float-left">
@@ -736,8 +718,8 @@ const Row6 = () => {
                             </div>
                         </div>
                     </div>
-                </Grid>
-                <Grid item lg={6} sm={12}>
+                </div>
+                <div className="col-md-6 col-sm-12 mg-top">
                      <div className="card">
                         <div className="card-body">
                             <div className="float-left">
@@ -753,8 +735,8 @@ const Row6 = () => {
                             </div>
                         </div>
                     </div>
-                </Grid>
-            </Grid>
+                </div>
+              </div>
         </div>
         </>
     )
@@ -764,82 +746,87 @@ const Row7 = () => {
     return (
         <>
             <div className="mg-top">
-                <Grid container
-                        direction="row"
-                         spacing={2}>
-                              <Grid item lg={12} md={6}  xl={4} spacing={2}>
-                                   <div className="card notification-card">
-                                    <div className="card-body justify-content-align">
-                                        <div className="inline-block-flt-left ">
-                                            <div className="large-white-text">5 Files</div>
-                                            <div className="small-white-text">Pending for print</div>
-                                        </div>
-                                        <div className="inline-block-flt-left">
-                                            <div className="circle-wrap">
-                                                <div className="circle">
-                                                    <div className="mask full">
-                                                        <div className="fill"></div>
-                                                    </div>
-                                                    <div className="mask half">
-                                                        <div className="fill"></div>
-                                                    </div>
-                                                    <div className="inside-circle">
-                                                        5/12
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                   <div className="card notification-card">
-                                    <div className="card-body justify-content-align">
-                                        <div className="inline-block-flt-left ">
-                                            <div className="large-white-text">4 Orders</div>
-                                            <div className="small-white-text">On approval process</div>
-                                        </div>
-                                        <div className="inline-block-flt-left">
-                                           <div className="circle-wrap">
-                                                <div className="circle">
-                                                    <div className="mask full">
-                                                        <div className="fill"></div>
-                                                    </div>
-                                                    <div className="mask half">
-                                                        <div className="fill"></div>
-                                                    </div>
-                                                    <div className="inside-circle">
-                                                       4/6
+                    <div className="row">
+                              <div className="col-md-6 col-lg-12 col-xl-4 mg-top">
+                                      <div className="row">
+                                        <div className="col-lg-4 col-xl-12 mg-bottom">
+                                                <div className="card notification-card">
+                                                    <div className="card-body justify-content-align">
+                                                        <div className="inline-block-flt-left ">
+                                                            <div className="large-white-text">5 Files</div>
+                                                            <div className="small-white-text">Pending for print</div>
+                                                        </div>
+                                                        <div className="inline-block-flt-left">
+                                                            <div className="circle-wrap">
+                                                                <div className="circle">
+                                                                    <div className="mask full">
+                                                                        <div className="fill"></div>
+                                                                    </div>
+                                                                    <div className="mask half">
+                                                                        <div className="fill"></div>
+                                                                    </div>
+                                                                    <div className="inside-circle">
+                                                                        5/12
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                  <div className="card notification-card">
-                                    <div className="card-body justify-content-align">
-                                        <div className="inline-block-flt-left ">
-                                            <div className="large-white-text">8 Alerts</div>
-                                            <div className="small-white-text">Waiting for notice</div>
-                                        </div>
-                                        <div className="inline-block-flt-left">
-                                            <div className="circle-wrap">
-                                                <div className="circle">
-                                                    <div className="mask full">
-                                                        <div className="fill"></div>
-                                                    </div>
-                                                    <div className="mask half">
-                                                        <div className="fill"></div>
-                                                    </div>
-                                                    <div className="inside-circle">
-                                                        8/10
+                                        <div className="col-lg-4 col-xl-12 mg-bottom">
+                                                <div className="card notification-card">
+                                                    <div className="card-body justify-content-align">
+                                                        <div className="inline-block-flt-left ">
+                                                            <div className="large-white-text">4 Orders</div>
+                                                            <div className="small-white-text">On approval process</div>
+                                                        </div>
+                                                        <div className="inline-block-flt-left">
+                                                        <div className="circle-wrap">
+                                                                <div className="circle">
+                                                                    <div className="mask full">
+                                                                        <div className="fill"></div>
+                                                                    </div>
+                                                                    <div className="mask half">
+                                                                        <div className="fill"></div>
+                                                                    </div>
+                                                                    <div className="inside-circle">
+                                                                    4/6
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Grid>
-                               <Grid item lg={6} md={6}  xl={4} sm={12}>
+                                            <div className="col-lg-4 col-xl-12 mg-bottom">
+                                                <div className="card notification-card">
+                                                    <div className="card-body justify-content-align">
+                                                        <div className="inline-block-flt-left ">
+                                                            <div className="large-white-text">8 Alerts</div>
+                                                            <div className="small-white-text">Waiting for notice</div>
+                                                        </div>
+                                                        <div className="inline-block-flt-left">
+                                                            <div className="circle-wrap">
+                                                                <div className="circle">
+                                                                    <div className="mask full">
+                                                                        <div className="fill"></div>
+                                                                    </div>
+                                                                    <div className="mask half">
+                                                                        <div className="fill"></div>
+                                                                    </div>
+                                                                    <div className="inside-circle">
+                                                                        8/10
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                      </div>
+                            </div>
+                               <div className="col-sm-12 col-md-6 col-lg-6 col-xl-4 mg-top">
                                  <div className="card relative-card advanced-search-card">
                                     <div className="card-body advanced-search-body">
                                         <div className="advanced-search-title">Advanced Search</div>
@@ -879,15 +866,12 @@ const Row7 = () => {
                                         </form>
                                     </div>
                                 </div>
-                            </Grid>
-                             <Grid item lg={6}  xl={4}>
-                                 <div className="card ">
-                                    <div className="card-body">
-                                        
-                                    </div>
-                                </div>
-                            </Grid>
-                </Grid>
+                            </div>
+                             <div className="col-lg-6 col-xl-4 mg-top">
+                                
+                            </div>
+
+                    </div>
             </div>
         
         </>
@@ -910,7 +894,7 @@ export const MainDashBoard = () => {
     return (
         <>
         <section id="main-dashboard" className="grid-full">
-            <div className="container">
+            <div className="container-fluid">
            <MainTitle/>
            <MainContent/>
             </div>
