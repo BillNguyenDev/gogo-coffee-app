@@ -71,6 +71,9 @@
       transition: all 0.5s;
       border: none;
       cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
       .short-bars {
         width: 6px;
         float: left;
