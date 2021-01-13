@@ -497,7 +497,7 @@ const Row4 = () => {
         <div className="mg-top">
               <div className="row">
                 <div className="col-lg-4 col-sm-12 mg-top">
-                    <div className="card">
+                    <div className="card card-row-4">
                         <div className="card-body">
                             <div className="card-title">Profile Status</div>
                             <ul className="status-list">
@@ -571,7 +571,7 @@ const Row4 = () => {
                     </div>
                 </div>
                 <div className="col-lg-4 col-md-6 mg-top">
-                    <div className="card banner">
+                    <div className="card banner card-row-4">
                         <div className="card-body">
                             <span className="brand-app">
                                 Gogo Coffee
@@ -584,7 +584,7 @@ const Row4 = () => {
                     </div>
                 </div>
                 <div className="col-lg-4 col-md-6 mg-top">
-                     <div className="card">
+                     <div className="card card-row-4">
                         <div className="card-body">
                             <div className="card-title">Cakes</div>
                             <ul className="cakes-list">
