@@ -833,12 +833,15 @@
 }
 .tickets-list {
   overflow: auto;
-  height: 500px;
+  height: 270px;
   li {
     display: flex;
     border-bottom: 1px solid #f1e4e4;
     padding: 13px 0;
   }
+}
+.dashboard-logs {
+  height: 270px;
 }
 .ticket-creator {
   float: right;

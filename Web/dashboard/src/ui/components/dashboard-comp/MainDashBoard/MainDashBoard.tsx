@@ -82,14 +82,14 @@ const Row2 = () => {
         <div className="mg-top">
                     <div className="row">
                         <div className="col-md-12 col-lg-4 mg-top">
-                            <div className="card">
+                            <div className="card ">
                                 <div className="card-body">
                                     <div className="card-title">Product Categories</div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4 mg-top">
-                            <div className="card">
+                            <div className="card ">
                                 <div className="card-body">
                                     <div className="card-title">Logs</div>
                                     <div className="dashboard-logs">
@@ -183,7 +183,7 @@ const Row2 = () => {
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4 mg-top">
-                            <div className="card card-width">
+                            <div className="card ">
                                 <div className="card-body">
                                     <div className="card-title">Tickets</div>
                                         <ul className="tickets-list">
