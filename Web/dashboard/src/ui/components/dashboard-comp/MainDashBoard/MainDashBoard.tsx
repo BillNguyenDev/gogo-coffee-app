@@ -1,9 +1,9 @@
 import React from 'react'
 import './MainDashBoard.scss';
-import Grid from '@material-ui/core/Grid';
-import { FormControl,InputLabel,Input,FormHelperText  } from '@material-ui/core';
-import { MDBIcon} from 'mdbreact';
-import AirBallon from '../../../../img/advanced-box.jpg';
+import { Icon, InlineIcon } from '@iconify/react';
+import chevronLeft from '@iconify-icons/bi/chevron-left';
+import chevronRight from '@iconify-icons/bi/chevron-right';
+
 const MainTitle = () => {
     return (
         <>
@@ -238,10 +238,10 @@ const Row3 = () => {
                                     <div className="calendar-btns-group">
                                         <button className="today-btn">Today</button>
                                         <button className="nav-btn">
-                                                <MDBIcon icon="chevron-left" />
+                                                <Icon icon={chevronLeft} />
                                             </button>
                                         <button className="nav-btn">
-                                                <MDBIcon icon="chevron-right" />
+                                                <Icon icon={chevronRight}/>
                                             </button>
                                     </div>
                                 </div>
@@ -461,7 +461,7 @@ const Row3 = () => {
                                     <ul className="pagination-list">
                                         <li className="disabled page-item">
                                             <button className="prev page-btn">
-                                                <MDBIcon icon="chevron-left" />
+                                                <Icon icon={chevronLeft}/>
                                             </button>
                                         </li>
                                         <li className="page-item">
@@ -478,7 +478,7 @@ const Row3 = () => {
                                         </li>
                                         <li className="abled page-item">
                                             <button className="next page-btn">
-                                                <MDBIcon icon="chevron-right" />
+                                                <Icon icon={chevronRight}/>
                                             </button>
                                         </li>
                                     </ul>
@@ -868,7 +868,40 @@ const Row7 = () => {
                                 </div>
                             </div>
                              <div className="col-lg-6 col-xl-4 mg-top">
-                                
+                                <div className="row">
+                                    <div className="col-6 mg-top">
+                                        <div className="card">
+                                            <div className="card-body  txt-align-center">
+                                                <span className="value-total">$1,300</span>
+                                                <div className="value-name">Total Orders-Sun</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 mg-top">
+                                          <div className="card">
+                                            <div className="card-body  txt-align-center">
+                                                <span className="value-total">$1,300</span>
+                                                <div className="value-name">Total Orders-Sun</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 mg-top">
+                                          <div className="card">
+                                            <div className="card-body  txt-align-center">
+                                                <span className="value-total">$1,300</span>
+                                                <div className="value-name">Total Orders-Sun</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 mg-top">
+                                          <div className="card">
+                                            <div className="card-body  txt-align-center">
+                                                <span className="value-total">$1,300</span>
+                                                <div className="value-name">Total Orders-Sun</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                     </div>

@@ -1,21 +1,43 @@
 import React from 'react';
 import './SideBarComp.scss';
-
-
+import { Icon, InlineIcon } from '@iconify/react';
+import shopWindow from '@iconify-icons/bi/shop-window';
+import monitorIcon from '@iconify-icons/feather/monitor';
+import applicationsIcon from '@iconify-icons/cil/applications';
+import pantoneLine from '@iconify-icons/ri/pantone-line';
+import tilemenuIcon from '@iconify-icons/ls/tilemenu';
+import bxsSmile from '@iconify-icons/bx/bxs-smile';
 
 export const SideBarComp = () => {
-    
     return (
         <>
         <section id="vertical-sidebar">
             <div className="main-vertical-menu border-radius-toggle">
                 <ul className="main-ul">
-                    <li className="active">Dashboard</li>
-                    <li>Pages</li>
-                    <li>Applications</li>
-                    <li>UI</li>
-                    <li>Menu</li>
-                    <li style={{borderBottom:"none"}}>About</li>
+                    <li className="active">
+                        <Icon icon={shopWindow} className="li-icon" />
+                        Dashboard
+                    </li>
+                    <li>
+                        <Icon icon={monitorIcon} className="li-icon" />
+                        Pages
+                    </li>
+                    <li>
+                        <Icon icon={applicationsIcon} className="li-icon" />
+                        Applications
+                    </li>
+                    <li>
+                        <Icon icon={pantoneLine} className="li-icon" />
+                        UI
+                    </li>
+                    <li>
+                        <Icon icon={tilemenuIcon} className="li-icon" />
+                        Menu
+                    </li>
+                    <li style={{borderBottom:"none"}}>
+                        <Icon icon={bxsSmile} className="li-icon" />
+                        About
+                    </li>
                 </ul>
             </div>
             <div className="sub-vertical-menu display-none display-show">

@@ -50,7 +50,7 @@
         top: 8px;
         svg {
           color: #d7d7d7;
-          font-size: 17px;
+          font-size: 22px;
           font-weight: lighter;
           &:hover {
             color: #e2a5a5;
@@ -71,6 +71,29 @@
       transition: all 0.5s;
       border: none;
       cursor: pointer;
+      .short-bars {
+        width: 6px;
+        float: left;
+        margin-right: 3px;
+        i {
+          width: 100%;
+          background-color: #3a3a3a;
+          height: 1px;
+          margin-top: 5px;
+          float: left;
+        }
+      }
+      .long-bars {
+        width: 12px;
+        float: left;
+        i {
+          width: 100%;
+          background-color: #8f8f8f;
+          height: 1px;
+          margin-top: 5px;
+          float: left;
+        }
+      }
     }
     .languages-switch {
       position: relative;
@@ -182,6 +205,10 @@
         border-color: #3a3a3a;
         color: #8f8f8f;
         vertical-align: initial;
+        transition: color 0.2s;
+        &:hover {
+          color: #6f4e37;
+        }
       }
       .noti-quantities {
         font-size: 9px;
@@ -356,6 +383,14 @@
       position: relative;
       cursor: pointer;
       outline: none;
+      .icon-grid {
+        font-size: 16px;
+        color: #8f8f8f;
+        transition: color 0.2s;
+        &:hover {
+          color: #6f4e37;
+        }
+      }
       .pages-list {
         position: absolute;
         display: none;
@@ -374,10 +409,19 @@
           display: inline-block;
           text-align: center;
           margin-bottom: 1.7rem;
-          color: rgba(58, 58, 58, 0.8);
+          color: #8f8f8f;
+          transition: color 0.2s;
           .icon-item {
             width: 100%;
             font-size: 28px;
+            color: #8f8f8f;
+            transition: color 0.2s;
+          }
+          &:hover {
+            color: #6f4e37;
+          }
+          &:hover > .icon-item {
+            color: #6f4e37;
           }
         }
       }
@@ -390,6 +434,14 @@
       border: none;
       outline: none;
       cursor: pointer;
+      svg {
+        color: #8f8f8f;
+        font-size: 16px;
+        transition: color 0.2s;
+        &:hover {
+          color: #6f4e37;
+        }
+      }
     }
   }
   // .profile {

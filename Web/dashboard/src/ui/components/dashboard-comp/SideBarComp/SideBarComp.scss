@@ -56,8 +56,14 @@
         transition: 0.3s ease;
         cursor: pointer;
         position: relative;
+        font-size: 13px;
         &:hover {
           color: #6f4e37;
+        }
+        .li-icon {
+          font-size: 30px;
+          width: 100%;
+          margin-bottom: 3px;
         }
       }
     }

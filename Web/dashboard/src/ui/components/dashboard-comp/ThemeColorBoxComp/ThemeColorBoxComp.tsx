@@ -16,7 +16,7 @@ const ThemeColorBoxComp = () => {
                         <span className="theme-color-item greenlime "></span>
                     </div>
                     <div className="d-flex-space-between-row">
-                        <span className="theme-color-item purplemonster active"></span>
+                        <span className="theme-color-item default active"></span>
                         <span className="theme-color-item orangecarrot "></span>
                         <span className="theme-color-item redruby "></span>
                         <span className="theme-color-item yellowgranola "></span>

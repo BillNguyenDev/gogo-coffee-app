@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
-import Grid from '@material-ui/core/Grid';
 import './NavBarComp.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
-import { faExpandArrowsAlt } from '@fortawesome/free-solid-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { faStore } from '@fortawesome/free-solid-svg-icons';
-import { faChartBar } from '@fortawesome/free-solid-svg-icons';
-import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import { faThLarge } from '@fortawesome/free-solid-svg-icons';
-import { MDBIcon} from 'mdbreact';
-// import SimpleLineIcon from 'react-simple-line-icons';
+import { Icon, InlineIcon } from '@iconify/react';
+import grid from '@iconify/icons-simple-line-icons/grid';
+import bell from '@iconify/icons-simple-line-icons/bell';
+import sizeFullscreen from '@iconify-icons/simple-line-icons/size-fullscreen';
+import shopWindow from '@iconify-icons/bi/shop-window';
+import pantoneLine from '@iconify-icons/ri/pantone-line';
+import chartIcon from '@iconify-icons/cil/chart';
+import chatIcon from '@iconify-icons/bi/chat';
+import listCheck from '@iconify-icons/bi/list-check';
+import mathFormula24Regular from '@iconify-icons/fluent/math-formula-24-regular';
+import caretDown from '@iconify-icons/fa-solid/caret-down';
+import searchOutlined from '@iconify-icons/ant-design/search-outlined';
+
 export const NavBarComp = () => {
     return (
         <>
@@ -20,16 +21,27 @@ export const NavBarComp = () => {
                             <div className="col-xl-4" style={{'textAlign':'center'}}> 
                                 <ul className="left-navbar">
                                     <li>
-                                        <button><FontAwesomeIcon icon={faBars} /></button>
+                                        <button>
+                                            <div className="short-bars">
+                                                <i></i>
+                                                <i></i>
+                                                <i></i>
+                                            </div>
+                                            <div className="long-bars">
+                                                <i></i>
+                                                <i></i>
+                                                <i></i>
+                                            </div>
+                                        </button>
                                     </li>
                                     <li>
                                         <input type="text" placeholder="Search"/>
                                         <label className="search-icon" htmlFor="">
-                                            <FontAwesomeIcon icon={faSearch} />
+                                            <InlineIcon icon={searchOutlined} />
                                         </label>
                                     </li>
                                     <li className="languages-switch">
-                                        <button>EN <FontAwesomeIcon icon={faCaretDown} /></button>
+                                        <button>EN <Icon icon={caretDown} /></button>
                                         <ul className="languages">
                                             <li tabIndex={0}>Enlish-LTR</li>
                                             <li tabIndex={0}>Espanol</li>
@@ -53,34 +65,36 @@ export const NavBarComp = () => {
                                         </button>
                                     </li>
                                     <li tabIndex={0} className="icons-menu-dropdown">
-                                        {/* <SimpleLineIcon name="grid" /> */}
-                                        <FontAwesomeIcon icon={faThLarge} />
+                                       <InlineIcon icon={grid} className="icon-grid"  />
                                         <div  className="pages-list">
                                             <div className="icon-menu-item">
-                                                <FontAwesomeIcon className="icon-item" icon={faStore} />
+                                                <InlineIcon icon={shopWindow} className="icon-item" />
                                                 Dashboards
                                             </div>
                                             <div className="icon-menu-item">
-                                                
+                                                <InlineIcon icon={pantoneLine} className="icon-item" />
                                                 UI
                                             </div>
                                             <div className="icon-menu-item">
-                                                <FontAwesomeIcon className="icon-item" icon={faChartBar} />
+                                                <InlineIcon icon={chartIcon} className="icon-item" />
                                                 Charts
                                             </div>
                                             <div className="icon-menu-item">
-                                                <MDBIcon className="icon-item" far icon="comment" />
+                                                <InlineIcon icon={chatIcon} className="icon-item" />
                                                 Chat
                                             </div>
-                                            <div className="icon-menu-item">Survey</div>
                                             <div className="icon-menu-item">
-                                                <FontAwesomeIcon className="icon-item" icon={faCheck} />
+                                                <InlineIcon icon={mathFormula24Regular} className="icon-item"/>
+                                                Survey
+                                            </div>
+                                            <div className="icon-menu-item">
+                                                <InlineIcon icon={listCheck}  className="icon-item" />
                                                 To-do-List
                                             </div>
                                         </div>
                                     </li>
                                     <li tabIndex={0} className="notification">
-                                        <MDBIcon far icon="bell" className="noti-icon" />
+                                        <InlineIcon icon={bell} className="noti-icon"  />
                                         <div className="noti-quantities">
                                             3
                                         </div>
@@ -127,7 +141,7 @@ export const NavBarComp = () => {
                                     </li>
                                     <li>
                                         <button className="full-screen-btn">
-                                            <FontAwesomeIcon icon={faExpandArrowsAlt} />
+                                            <InlineIcon icon={sizeFullscreen} />
                                         </button>
                                     </li>
                                     <li tabIndex={0} className="profile">

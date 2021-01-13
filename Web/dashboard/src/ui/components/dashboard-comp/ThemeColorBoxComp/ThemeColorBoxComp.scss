@@ -52,11 +52,12 @@
         background: #6fb327;
       }
       .purplemonster {
-        border: 3px solid #922c88;
+        border: 3px solid#922c88;
         background: #922c88;
       }
-      .purplemonster.active {
-        background-color: #fff;
+      .default {
+        border: 3px solid #6f4e37;
+        background: #6f4e37;
       }
       .orangecarrot {
         border: 3px solid #ed7117;
@@ -73,6 +74,9 @@
       .greysteel {
         border: 3px solid #48494b;
         background: #48494b;
+      }
+      .active {
+        background-color: #fff !important;
       }
     }
   }
