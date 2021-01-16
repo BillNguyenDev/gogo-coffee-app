@@ -28,6 +28,7 @@
         &:hover > .menu-item-name {
           transform: translateX(10px);
           opacity: 1;
+          visibility: visible;
         }
         .menu-item-name {
           white-space: nowrap;
@@ -39,6 +40,7 @@
           transition: all 0.3s ease-in-out 0s;
           transform: translateX(22px);
           opacity: 0;
+          visibility: hidden;
           p {
             padding: 0 12px;
             border-radius: 200px;
