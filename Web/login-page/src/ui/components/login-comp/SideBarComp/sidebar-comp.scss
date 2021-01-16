@@ -10,7 +10,7 @@
   overflow-y: visible;
   transition: all 0.5s ease;
   .menu-sidebar {
-    margin-top: 7rem;
+    margin-top: 5rem;
     .menu-item {
       padding: 0 22px;
       margin-top: 8px;
@@ -63,7 +63,7 @@
 #side-bar.delayed {
   transform: translateX(0px);
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 900px) {
   #side-bar {
     transform: translateX(-80px) !important;
   }

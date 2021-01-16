@@ -12,7 +12,7 @@ import unorderedListOutlined from '@iconify-icons/ant-design/unordered-list-outl
 import stickyNote from '@iconify-icons/vs/sticky-note';
 const FullSideBarComp = () => {
     return (
-        <div>
+        <>
             <nav id="full-sidebar" className="delayed hidden">
                 <div id="section">
                     <ul className="menu-sidebar">
@@ -67,7 +67,7 @@ const FullSideBarComp = () => {
                     </ul>
                 </div>
             </nav>
-        </div>
+        </>
     )
 }
 
