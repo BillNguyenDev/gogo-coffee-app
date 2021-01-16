@@ -1,91 +1,82 @@
 import React from 'react'
 import './sidebar-comp.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faNewspaper } from '@fortawesome/fontawesome-free-solid';
-import { faUsers } from '@fortawesome/fontawesome-free-solid';
-import { faList } from '@fortawesome/fontawesome-free-solid';
-import { faStickyNote } from '@fortawesome/fontawesome-free-solid';
-import { faUser } from '@fortawesome/fontawesome-free-solid';
-import { faBell } from '@fortawesome/fontawesome-free-solid';
-import { faAppStore } from "@fortawesome/free-brands-svg-icons";
-import { faGooglePlay } from "@fortawesome/free-brands-svg-icons";
-import { faAndroid } from "@fortawesome/free-brands-svg-icons";
+import { Icon, InlineIcon } from '@iconify/react';
+import news28Regular from '@iconify-icons/fluent/news-28-regular';
+import usersBold from '@iconify-icons/ph/users-bold';
+import userOutlined from '@iconify-icons/ant-design/user-outlined';
+import bellIcon from '@iconify-icons/cil/bell';
+import logoAppleAppstore from '@iconify-icons/ion/logo-apple-appstore';
+import googleplayIcon from '@iconify-icons/simple-icons/googleplay';
+import unorderedListOutlined from '@iconify-icons/ant-design/unordered-list-outlined';
+import stickyNote from '@iconify-icons/vs/sticky-note';
 const SideBarComp = () => {
     return (
         <>
-            <nav id="side-bar">
+            <nav id="side-bar" className="delayed hidden">
                 <ul className="menu-sidebar">
                     <li className="menu-item">
-                        <a className="menu-item-link">
-                            <FontAwesomeIcon icon={faNewspaper} />
-                            <div className="menu-item-name" style={{ opacity: 0, visibility: 'hidden', transform: 'translate(10px, 0px)' }}>
+                        <div className="menu-item-link">
+                            <Icon icon={news28Regular} />
+                            <div className="menu-item-name" >
                                 <p>Posts</p>
                             </div>
-                        </a>
+                        </div>
                     </li>
                     <li className="menu-item">
-                        <a className="menu-item-link">
-                            <FontAwesomeIcon icon={faUsers} />
-                            <div className="menu-item-name" style={{ opacity: 0, visibility: 'hidden', transform: 'translate(10px, 0px)' }}>
+                        <div className="menu-item-link">
+                            <Icon icon={usersBold} />
+                            <div className="menu-item-name" >
                                 <p>Staffs</p>
                             </div>
-                        </a>
+                        </div>
                     </li>
                     <li className="menu-item">
-                        <a className="menu-item-link">
-                            <FontAwesomeIcon icon={faUser} />
-                            <div className="menu-item-name" style={{ opacity: 0, visibility: 'hidden', transform: 'translate(10px, 0px)' }}>
+                        <div className="menu-item-link">
+                            <Icon icon={userOutlined} />
+                            <div className="menu-item-name" >
                                 <p>Profile</p>
                             </div>
-                        </a>
+                        </div>
                     </li>
                     <li className="menu-item">
-                        <a className="menu-item-link">
-                            <FontAwesomeIcon icon={faBell} />
-                            <div className="menu-item-name" style={{ opacity: 0, visibility: 'hidden', transform: 'translate(10px, 0px)' }}>
+                        <div className="menu-item-link">
+                            <Icon icon={bellIcon} />
+                            <div className="menu-item-name" >
                                 <p>Notifications</p>
                             </div>
-                        </a>
+                        </div>
                     </li>
                     <li className="menu-item">
-                        <a className="menu-item-link">
-                            <FontAwesomeIcon icon={faAppStore} />
-                            <div className="menu-item-name" style={{ opacity: 0, visibility: 'hidden', transform: 'translate(10px, 0px)' }}>
+                        <div className="menu-item-link">
+                            <Icon icon={logoAppleAppstore} />
+                            <div className="menu-item-name" >
                                 <p>Download on App Store</p>
                             </div>
-                        </a>
+                        </div>
                     </li>
                     <li className="menu-item">
-                        <a className="menu-item-link">
-                            <FontAwesomeIcon icon={faGooglePlay} />
-                            <div className="menu-item-name" style={{ opacity: 0, visibility: 'hidden', transform: 'translate(10px, 0px)' }}>
+                        <div className="menu-item-link">
+                            <Icon icon={googleplayIcon} />
+                            <div className="menu-item-name" >
                                 <p>Download on Google Play</p>
                             </div>
-                        </a>
+                        </div>
                     </li>
                     <li className="menu-item">
-                        <a className="menu-item-link">
-                            <FontAwesomeIcon icon={faAndroid} />
-                            <div className="menu-item-name" style={{ opacity: 0, visibility: 'hidden', transform: 'translate(10px, 0px)' }}>
-                                <p>Download on Google Play</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li className="menu-item">
-                        <a className="menu-item-link">
-                            <FontAwesomeIcon icon={faList} />
-                            <div className="menu-item-name" style={{ opacity: 0, visibility: 'hidden', transform: 'translate(10px, 0px)' }}>
+                        <div className="menu-item-link">
+                            <Icon icon={unorderedListOutlined} />
+                            <div className="menu-item-name" >
                                 <p>Products</p>
                             </div>
-                        </a>
+                        </div>
                     </li>
                     <li className="menu-item">
-                        <a className="menu-item-link">
-                            <FontAwesomeIcon icon={faStickyNote} />
-                            <div className="menu-item-name" style={{ opacity: 0, visibility: 'hidden', transform: 'translate(10px, 0px)' }}>
-                                <p>Products</p>
+                        <div className="menu-item-link">
+                            <Icon icon={stickyNote} />
+                            <div className="menu-item-name" >
+                                <p>Blogs</p>
                             </div>
-                        </a>
+                        </div>
                     </li>
                 </ul>
             </nav>

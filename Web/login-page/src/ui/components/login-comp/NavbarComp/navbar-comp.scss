@@ -38,11 +38,20 @@
         margin-right: 10px;
       }
     }
+    .grid-icon {
+      font-size: 20px;
+      color: #ccc;
+      transition: color 0.3s ease-in-out;
+      font-weight: 500;
+      &:hover {
+        color: #fff;
+      }
+    }
     .li-parent {
       position: relative;
       .chevron-down-icon {
         margin-left: 5px;
-        font-size: 8px;
+        font-size: 18px;
       }
       &:hover > .dropdown1 {
         visibility: visible;
@@ -75,6 +84,10 @@
           display: block;
           width: 100%;
           font-weight: 100;
+          transition: color 0.3s ease-in;
+          &:hover {
+            color: #aa7011;
+          }
         }
         .li-child-title {
           padding: 13px 0 !important;
@@ -99,6 +112,10 @@
           li {
             display: block;
             text-align: center;
+            transition: color 0.3s ease-in;
+            &:hover {
+              color: #eecc37;
+            }
           }
         }
       }

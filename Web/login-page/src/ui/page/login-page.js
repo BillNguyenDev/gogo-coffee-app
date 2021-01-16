@@ -7,11 +7,13 @@ import SideBarComp from '../components/login-comp/SideBarComp/sidebar-comp';
 import './login-page.scss';
 import FooterLoginComp from '../components/login-comp/FooterComp/footer-comp';
 import NavSmallDeviceComp from '../components/login-comp/NavSmallDeviceComp/NavSmallDeviceComp';
+import FullSideBarComp from '../components/login-comp/FullSideBarComp/FullSideBarComp';
 const LoginPage = () => {
     return (
         <>
             <NavBarComp />
             <SideBarComp />
+            <FullSideBarComp />
             <NavSmallDeviceComp />
             <Router>
                 <Switch>

@@ -1,10 +1,12 @@
 import React from 'react'
 import './footer-comp.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/fontawesome-free-solid';
-import { faFacebookF, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import logo4 from '../../../../img/logo4.png';
-
+import { Icon, InlineIcon } from '@iconify/react';
+import facebookRect from '@iconify-icons/brandico/facebook-rect';
+import twitterIcon from '@iconify-icons/cib/twitter';
+import youtubeIcon from '@iconify-icons/cib/youtube';
+import instagramIcon from '@iconify-icons/cib/instagram';
+import fileTypeCoffeescript from '@iconify-icons/vscode-icons/file-type-coffeescript';
 
 const FooterLoginComp = () => {
 
@@ -23,13 +25,13 @@ const FooterLoginComp = () => {
                                 </div>
                                 <span style={{ 'marginRight': '10px' }}>One cup of coffee in Gogo Coffee will boost your energy every morning.Come and order.
                                 </span>
-                                <FontAwesomeIcon icon={faCoffee} />
-                                <FontAwesomeIcon icon={faCoffee} />
+                                <Icon icon={fileTypeCoffeescript} />
+                                <Icon icon={fileTypeCoffeescript} />
                                 <div className="social-media">
-                                    <FontAwesomeIcon icon={faFacebookF} />
-                                    <FontAwesomeIcon icon={faInstagram} />
-                                    <FontAwesomeIcon icon={faTwitter} />
-                                    <FontAwesomeIcon icon={faYoutube} />
+                                    <Icon icon={facebookRect} />
+                                    <Icon icon={instagramIcon} />
+                                    <Icon icon={twitterIcon} />
+                                    <Icon icon={youtubeIcon} />
                                 </div>
                             </div>
                             <div className="footer-navigation">

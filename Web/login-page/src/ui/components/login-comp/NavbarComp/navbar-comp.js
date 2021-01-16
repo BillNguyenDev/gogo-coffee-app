@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import './navbar-comp.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/fontawesome-free-solid';
-import SimpleLineIcon from 'react-simple-line-icons';
 import logo from './../../../../img/logo3.png';
+import { Icon, InlineIcon } from '@iconify/react';
+import gridIcon from '@iconify-icons/feather/grid';
+import chevronDown from '@iconify-icons/carbon/chevron-sort-down';
+import searchIcon from '@iconify-icons/cil/search';
+
 const NavBarComp = () => {
     return (
         <>
-            {/* <FontAwesomeIcon icon="bars" className="bars" /> */}
             <section id="top-menu" className="grid-full">
                 <div className="action">
                     <div className="hidden-logo">
@@ -25,10 +26,10 @@ const NavBarComp = () => {
                                 Gogo Coffee
                         </li>
                     <li>
-                        <SimpleLineIcon name="grid" />
+                        <InlineIcon className="grid-icon" icon={gridIcon} />
                     </li>
                     <li>Home</li>
-                    <li className="li-parent">Feature <FontAwesomeIcon icon="chevron-down" className="chevron-down-icon" />
+                    <li className="li-parent">Feature <InlineIcon icon={chevronDown} className="chevron-down-icon" />
                         <div className="dropdown1">
                             <div className="container">
                                 <div className="row">
@@ -59,7 +60,7 @@ const NavBarComp = () => {
                             </div>
                         </div>
                     </li>
-                    <li className="li-parent">More <FontAwesomeIcon icon="chevron-down" className="chevron-down-icon" />
+                    <li className="li-parent">More <InlineIcon icon={chevronDown} className="chevron-down-icon" />
                         <div className="dropdown2">
                             <ul className="ul-child">
                                 <li>Other items</li>
@@ -70,7 +71,7 @@ const NavBarComp = () => {
                 </ul>
                 <div className="search">
                     <input className="search-input" type="text" placeholder="Search here" />
-                    <FontAwesomeIcon icon={faSearch} className="search-icon" />
+                    <InlineIcon icon={searchIcon} className="search-icon" />
                 </div>
                 <button className="right">Login</button>
             </section>
