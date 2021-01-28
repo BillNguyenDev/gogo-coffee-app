@@ -11,7 +11,7 @@ import bxsSmile from '@iconify-icons/bx/bxs-smile';
 export const SideBarComp = () => {
     return (
         <>
-        <section id="vertical-sidebar">
+        <nav id="vertical-sidebar">
             <div className="main-vertical-menu border-radius-toggle">
                 <ul className="main-ul">
                     <li className="active">
@@ -146,7 +146,7 @@ export const SideBarComp = () => {
                     </li>
                 </ul>
             </div>
-        </section>
+        </nav>
         </>
     )
 }

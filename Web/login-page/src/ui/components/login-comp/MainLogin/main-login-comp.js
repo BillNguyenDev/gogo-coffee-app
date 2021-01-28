@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Col, Button, Form, FormGroup } from 'reactstrap';
 import './main-login-comp.scss';
 const FormLogin = () => {
     const [account, setAccount] = useState({ username: '', password: '' });
@@ -24,33 +23,33 @@ const FormLogin = () => {
 
     return (
         <>
-            <Form className="LoginForm" onSubmit={handleSubmit}>
+            <form className="LoginForm" onSubmit={handleSubmit}>
                 <div className="text-center pb-5">
                     <h2>Account Login</h2>
                 </div>
-                <FormGroup row>
-                    <Col sm={12}>
+                <div className="form-group">
+                    <div className="col-sm-12">
                         <div className="form-input">
                             <input type="text" className="input" placeholder="username" />
                             <label htmlFor="">User name</label>
                         </div>
-                    </Col>
-                </FormGroup>
-                <FormGroup row>
-                    <Col sm={12}>
+                    </div>
+                </div>
+                <div className="form-group">
+                    <div className="col-sm-12">
                         <div className="form-input">
                             <input type="password" className="input" placeholder="password" />
                             <label htmlFor="">Password</label>
                         </div>
-                    </Col>
-                </FormGroup>
+                    </div>
+                </div>
                 <div className="check-remember">
                     <input type="checkbox" id="checkbox" />
                     <label htmlFor="checkbox">Remember Me</label>
                 </div>
-                <Button sm={12} color="primary" to="/dashboard" type="submit">Login to your Account</Button>{' '}
-                <Button sm={12} color="primary" type="submit">Sign up</Button>{' '}
-            </Form>
+                <button className="col-sm-12 btn btn-primary" to="/dashboard" type="submit">Login to your Account</button>{' '}
+                <button className="col-sm-12 btn btn-primary" type="submit">Sign up</button>{' '}
+            </form>
         </>
     );
 }

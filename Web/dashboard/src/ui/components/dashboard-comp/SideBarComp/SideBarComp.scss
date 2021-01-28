@@ -12,26 +12,26 @@
     background: #fff;
     z-index: 3;
     position: fixed;
-    transition: transform 0.3s;
+    transition: all 0.3s;
     padding: 10px 0;
     left: 0;
-    overflow: hidden;
-    &::-webkit-scrollbar {
-      width: 4px !important;
-      opacity: 0.5 !important;
-    }
-    &::-webkit-scrollbar-track {
-      background-color: transparent !important;
-    }
-    &::-webkit-scrollbar-thumb {
-      background: #e6e1e1 !important;
-      border-radius: 12px !important;
-    }
-    &::-webkit-scrollbar-thumb:hover {
-      background-color: #999 !important;
-    }
+    overflow-y: hidden;
     &:hover {
       overflow-y: overlay;
+      &::-webkit-scrollbar {
+        width: 5px !important;
+        opacity: 0.5 !important;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: transparent !important;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #e6e1e1 !important;
+        border-radius: 12px !important;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #999 !important;
+      }
     }
     .main-ul {
       .active {

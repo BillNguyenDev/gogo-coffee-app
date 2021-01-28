@@ -1,6 +1,6 @@
 import React from 'react'
 import './sidebar-comp.scss';
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import news28Regular from '@iconify-icons/fluent/news-28-regular';
 import usersBold from '@iconify-icons/ph/users-bold';
 import userOutlined from '@iconify-icons/ant-design/user-outlined';
