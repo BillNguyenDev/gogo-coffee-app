@@ -133,7 +133,7 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
-  opacity: 0;
+  display: none;
   transition: all 0.5s;
 }
 .disappear {
