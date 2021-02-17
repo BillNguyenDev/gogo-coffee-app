@@ -25,12 +25,10 @@
     }
     .right-footer-item {
       padding-left: 0.5rem;
-      a {
-        color: #6f4e37;
-        cursor: pointer;
-        &:hover {
-          text-decoration: underline;
-        }
+      color: #6f4e37;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

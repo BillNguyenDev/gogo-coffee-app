@@ -1,6 +1,6 @@
 import React from "react";
 import "./MainDashBoard.scss";
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import chevronLeft from "@iconify-icons/bi/chevron-left";
 import chevronRight from "@iconify-icons/bi/chevron-right";
 import { Line } from "react-chartjs-2";
