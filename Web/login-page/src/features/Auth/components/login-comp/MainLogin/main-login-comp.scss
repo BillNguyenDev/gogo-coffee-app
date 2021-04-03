@@ -1,0 +1,78 @@
+.main {
+  margin-top: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  
+  .title-container {
+    .btn {
+      justify-content: space-around;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      button {
+        font-family: "Rajdhani", Sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 16px;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-radius: 12px 12px 12px 12px;
+        width: auto;
+        text-align: center;
+        padding: 16px 26px;
+      }
+      .download {
+        background-color: #3e3f5e;
+        color: #fff;
+      }
+      .download:hover {
+        background-color: #de910d;
+        transition: all 0.2s;
+      }
+      .about-features {
+        background-color: #00000000;
+        color: #fff;
+        border: 1px solid #fff;
+      }
+      .about-features:hover {
+        background-color: #3e3f5e;
+        transition: all 0.4s;
+      }
+    }
+    h2 {
+      color: #dc7718;
+      font-family: "Titillium Web", Sans-serif;
+      font-size: 104px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    h4 {
+      color: #dc7718;
+      font-family: "Rajdhani", Sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 1199px) {
+  .main {
+    padding: 0 6rem;
+  }
+  // .LoginForm {
+  //   width: 80% !important;
+  //   max-width: 484px;
+  // }
+  .title-container {
+    .btn {
+      flex-direction: column !important;
+      display: flex;
+      justify-content: center !important;
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export const STATIC_HOST = "http://localhost:2000";

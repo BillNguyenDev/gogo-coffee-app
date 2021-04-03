@@ -1,0 +1,65 @@
+.LoginForm {
+    max-width: 450px;
+    border: 1px solid #fff;
+    padding: 64px;
+    border-radius: 12px;
+    background-color: #fff;
+    margin: 0 auto;
+      .form-input {
+    transition: all 0.3s;
+    label {
+      text-align: left;
+      transition: all 0.3s;
+      max-width: 120px;
+      background-color: #fff;
+      z-index: 1;
+      color: #a58d65;
+      font-size: 1rem;
+      cursor: text;
+      touch-action: manipulation;
+    }
+    .input {
+      width: 100%;
+      height: 54px;
+      border-radius: 5px;
+      border: 1px solid rgb(240, 240, 240);
+      padding: 15px;
+      touch-action: manipulation;
+      transition: all 0.3s;
+      &:placeholder-shown + label{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transform-origin: 0 0;
+        transform: translateY(-40px) translateX(10px);
+      }
+      &:focus {
+        // background-color: yellow;
+        border: 1px solid #eaa82b;
+        outline: none;
+      }
+      &:focus + label,
+      &:not(:placeholder-shown) + label {
+        transform: translateY(-68px) translateX(10px) scale(0.8);
+        cursor: pointer;
+      }
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+  .check-remember {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    label {
+      margin: 0;
+      margin-left: 1rem;
+    }
+  }
+  button {
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+  }
+  }
