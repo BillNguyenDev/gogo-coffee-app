@@ -2,7 +2,7 @@ const { createUser, getUsers, getUserByEmail } = require('../../models/accounts/
 
 const { genSaltSync, hashSync, compareSync } = require("bcrypt");
 const { sign } = require("jsonwebtoken");
-
+const API_CONSTANTS = require("../../../constants")
 
 module.exports = {
     createUser: (req, res) => {
@@ -37,33 +37,32 @@ module.exports = {
     login: (req, res) => {
         const body = req.body;
         getUserByEmail(body.email, (err, results) => {
+            const { id, email, phone, username, address, role } = results
             if (err) {
                 console.log(err);
             }
-            if (!results) {
-                return res.json({
-                    success: 0,
-                    data: "Invalid email or password"
-                });
-            }
             const isValid = compareSync(body.password, results.password);
-            if (isValid) {
-                isValid.password = undefined;
-                const jsonwebtoken = sign({ isValid: results }, "qwe1234", {
-                    expiresIn: "24h"
-                });
-                return res.json({
-                    success: 1,
-                    message: 'login successfully',
-                    token: jsonwebtoken
+            const jsonwebtoken = sign({ id, username, email }, "qwe1234", {
+                expiresIn: "24h"
+            });
+            if (!isValid) {
+                return res.status(400).json({
+                    message: "Wrong email or password"
                 });
             }
-            else {
-                return res.status(401).json({
-                    success: 0,
-                    data: "Invalid email or password"
-                });
-            }
+            return res.status(200).json({
+                status: 200,
+                message: API_CONSTANTS.LOGIN_SUCCESS_MESSAGE,
+                token: jsonwebtoken,
+                data: {
+                    username,
+                    email,
+                    phone,
+                    address,
+                    role
+                }
+            });
+
         })
 
     }

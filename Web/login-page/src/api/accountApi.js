@@ -1,3 +1,4 @@
+import { API_ROUTES } from "../constants";
 import axiosClient from "./axiosClient";
 
 const accountApi = {
@@ -6,9 +7,8 @@ const accountApi = {
     return axiosClient.post(url, data);
   },
   login(data) {
-    const url = "/account/login";
-    return axiosClient.post(url, data);
+    return axiosClient.post(API_ROUTES.LOGIN, data);
   },
-};    
+};
 
 export default accountApi;

@@ -17,18 +17,17 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/', (req, res) => {
-    res.send("Hello World");
-});
+
 
 app.use('/product', productRouter);
 app.use('/account', accountRouter);
+let server = app.listen(2000);
 pool.getConnection((err) => {
     if (err) {
         console.log(err);
     }
     else {
-        console.log("Connected successfully ");
+        console.log(`Localhost:${server.address().port} has been connected successfully `);
     }
 });
 module.exports = app;

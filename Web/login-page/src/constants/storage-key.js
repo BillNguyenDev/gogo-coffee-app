@@ -1,6 +1,6 @@
 const STORAGE_KEY = {
     'TOKEN': 'token',
-    'USER': 'user'
+    'USER': 'username'
 };
 
 export default STORAGE_KEY

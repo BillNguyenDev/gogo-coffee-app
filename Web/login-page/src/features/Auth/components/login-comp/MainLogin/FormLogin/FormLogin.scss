@@ -7,6 +7,7 @@
     margin: 0 auto;
       .form-input {
     transition: all 0.3s;
+    position: relative;
     label {
       text-align: left;
       transition: all 0.3s;
@@ -47,6 +48,15 @@
         color: transparent;
       }
     }
+    .error{
+        color: red;
+        position: absolute;
+        top: 55px;
+        font-size: 14px;
+    }
+  }
+  div.form-group{
+    margin-bottom: 4px;
   }
   .check-remember {
     display: flex;
@@ -61,5 +71,8 @@
     width: 100%;
     height: 3rem;
     margin-top: 2rem;
+  }
+  #checkbox{
+    margin-right: 10px;
   }
   }

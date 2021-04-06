@@ -1,2 +1,3 @@
-export * from './common.js';
-export * from './storage-key.js';
+export * from './common';
+export * from './storage-key';
+export * from './api-route';

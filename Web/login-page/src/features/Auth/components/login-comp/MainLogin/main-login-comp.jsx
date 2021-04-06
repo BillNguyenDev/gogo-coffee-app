@@ -12,16 +12,17 @@ import "./main-login-comp.scss";
 const MainLoginComp = () => {
 
   let dispatch = useDispatch()
-  const handleSubmit = async (values) => {
-    try {
-      const action = login(values);
-      const resultAction = await dispatch(action);
-      unwrapResult(resultAction)
-      alert("Login successfully !")
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  // const handleSubmit = async (values) => {
+  //   // try {
+  //   const action = login(values);
+  //   const resultAction = await dispatch(action);
+  //   unwrapResult(resultAction)
+  //   //   alert("Login successfully !")
+  //   // } catch (error) {
+  //   //   alert("Login failed !")
+  //   //   console.log(error);
+  //   // }
+  // }
   return (
     <>
       <div className="container main">
@@ -39,8 +40,9 @@ const MainLoginComp = () => {
             </div>
           </div>
           <div className="col-xl-6 col-md-12">
-            <FormLogin onSubmit={handleSubmit} />
-            {/* <FormSignup/> */}
+            {/* <FormLogin onSubmit={handleSubmit} /> */}
+            <FormLogin />
+            {/* <FormSignup /> */}
           </div>
         </div>
       </div>
