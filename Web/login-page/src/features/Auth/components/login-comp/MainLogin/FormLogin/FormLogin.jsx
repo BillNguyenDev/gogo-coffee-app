@@ -2,7 +2,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { unwrapResult } from "@reduxjs/toolkit";
 import React, { useState } from 'react';
 import { Controller, useForm } from "react-hook-form";
-import { useDispatch, useStore } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from 'react-router';
 import * as yup from "yup";
 import { login } from "../../../../accountSlice";
@@ -25,8 +25,11 @@ const FormLogin = (props) => {
     });
 
     const { register, formState: { errors, isSubmitting }, } = form;
+
     let dispatch = useDispatch();
+
     const [message, setMessage] = useState((''));
+
     let history = useHistory();
     const handleSubmit = async (values) => {
         try {
@@ -34,7 +37,7 @@ const FormLogin = (props) => {
             const resultAction = await dispatch(action);
             unwrapResult(resultAction);
             setMessage('');
-            history.push('/maindashboard');
+            history.push('/');
             form.reset();
         } catch (error) {
             setMessage(
@@ -42,6 +45,7 @@ const FormLogin = (props) => {
                     {error.message}
                 </div>
             )
+
         }
     }
     return (
