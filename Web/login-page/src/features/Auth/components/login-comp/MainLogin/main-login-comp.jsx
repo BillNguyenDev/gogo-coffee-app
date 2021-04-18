@@ -3,7 +3,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { login } from "../../../accountSlice";
 import FormLogin from "./FormLogin/FormLogin";
-import FormSignup from "./FormSignup/FormSignup";
+import FormForgotPass from "./FormForgotPass/FormForgotPass";
 import "./main-login-comp.scss";
 
 
@@ -42,7 +42,7 @@ const MainLoginComp = () => {
           <div className="col-xl-6 col-md-12">
             {/* <FormLogin onSubmit={handleSubmit} /> */}
             <FormLogin />
-            {/* <FormSignup /> */}
+            {/* <FormForgotPass /> */}
           </div>
         </div>
       </div>

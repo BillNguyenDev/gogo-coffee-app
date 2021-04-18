@@ -114,8 +114,8 @@ const FormLogin = (props) => {
                 >
                     Login to your Account
                 </button>
-                <button className="col-sm-12 btn btn-primary">
-                    Don't have an account ? Sign up
+                <button type="button" className="col-sm-12 btn btn-primary">
+                    Forgotten password ?
                 </button>
             </form>
         </>
